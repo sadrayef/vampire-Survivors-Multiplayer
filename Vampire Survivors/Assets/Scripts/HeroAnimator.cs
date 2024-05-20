@@ -21,6 +21,7 @@ public class HeroAnimator : MonoBehaviour
 
     //-------------------------------------------------------------
 
+    
     void Update()
     {
         if(herom.moveDir.x != 0 || herom.moveDir.y != 0)

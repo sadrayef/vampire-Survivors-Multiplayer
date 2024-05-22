@@ -492,9 +492,9 @@ MonoBehaviour:
   terrainChunks:
   - {fileID: 7003041219098389527, guid: ecf432f3dea6fb14c9a2f0a770333403, type: 3}
   - {fileID: 7003041219098389527, guid: 558b208a304ea1b44bb736202e7c1ff9, type: 3}
-  - {fileID: 7003041219098389527, guid: 992fed76a0416f445aecf7b181ca478a, type: 3}
+  - {fileID: 7003041219098389527, guid: 558b208a304ea1b44bb736202e7c1ff9, type: 3}
   player: {fileID: 342651934}
-  checkerRadius: 0.2
+  checkerRadius: 5
   noTerrainPosition: {x: 0, y: 0, z: 0}
   terrainMask:
     serializedVersion: 2

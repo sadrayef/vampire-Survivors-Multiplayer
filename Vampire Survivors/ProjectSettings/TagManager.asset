@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Terrain
-  - 
+  - weapen
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 19199733
+    locked: 1
+  - name: MidGround
+    uniqueID: 2762935257
+    locked: 0
+  - name: ForeGround
+    uniqueID: 800755701
     locked: 0

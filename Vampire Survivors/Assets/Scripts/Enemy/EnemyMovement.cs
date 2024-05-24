@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public EnemyScriptableObject enemyData;
     Transform hero;
 
-    public float enemySpeed;
+    
 
     private void Start()
     {
@@ -15,6 +16,6 @@ public class EnemyMovement : MonoBehaviour
     }
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, hero.transform.position, enemySpeed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, hero.transform.position, enemyData.MoveSpeed * Time.deltaTime);
     }
 }

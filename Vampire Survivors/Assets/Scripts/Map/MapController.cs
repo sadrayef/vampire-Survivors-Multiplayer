@@ -13,6 +13,7 @@ public class MapController : MonoBehaviour
     public Vector3 noTerrainPosition;
     public LayerMask terrainMask;
     public GameObject currentChunk;
+    int counter;
 
     
 
@@ -60,6 +61,7 @@ public class MapController : MonoBehaviour
                 {
 
                     noTerrainPosition = currentChunk.transform.Find("Right").position; //Right
+               
                     SpawnChunk();
                     //noTerrainPosition = currentChunk.transform.Find("Right Up").position; //Right up
                     //SpawnChunk();
@@ -159,8 +161,18 @@ public class MapController : MonoBehaviour
     void SpawnChunk()
     {
         int random = UnityEngine.Random.Range(0, terrainChunks.Count);
+     
         lastestchunk = Instantiate(terrainChunks[random], noTerrainPosition, Quaternion.identity);
         spawnedChunks.Add(lastestchunk);
+    }
+
+    void SpawnChunk0()
+    {
+        int random = UnityEngine.Random.Range(0, terrainChunks.Count);
+        lastestchunk = Instantiate(terrainChunks[random], new Vector3(0,0,0), Quaternion.identity);
+        spawnedChunks.Add(lastestchunk);
+
+   
     }
 
     void ChunkOptimizer()

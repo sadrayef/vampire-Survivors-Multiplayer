@@ -8,6 +8,7 @@ public class HeroMovement : MonoBehaviour
 
     public float speed;
     Rigidbody2D rb2D;
+    HeroStats hero;
     [HideInInspector]
     public Vector2 moveDir;
     [HideInInspector]
@@ -17,12 +18,13 @@ public class HeroMovement : MonoBehaviour
     [HideInInspector]
     public Vector2 lastMovedV;
 
-    public CharacterScriptableObject characterData;
+     
 
     //-------------------------------------------------------------
 
     void Start()
     {
+        hero = GetComponent<HeroStats>();
         rb2D = GetComponent<Rigidbody2D>();
 
         lastMovedV = new Vector2(1, 0f);
@@ -69,6 +71,6 @@ public class HeroMovement : MonoBehaviour
 
     void Mover()
     {
-        rb2D.velocity = new Vector2(moveDir.x * characterData.MoveSpeed, moveDir.y * characterData.MoveSpeed);
+        rb2D.velocity = new Vector2(moveDir.x * hero.currentMoveSpeed, moveDir.y * hero.currentMoveSpeed);
     }
 }

@@ -139,7 +139,6 @@ GameObject:
   - component: {fileID: 342651941}
   - component: {fileID: 342651940}
   - component: {fileID: 342651942}
-  - component: {fileID: 342651943}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Player
@@ -164,7 +163,6 @@ MonoBehaviour:
   lastHorizontalV: 0
   lastVerticalV: 0
   lastMovedV: {x: 0, y: 0}
-  characterData: {fileID: 11400000, guid: b2d1dfa2b097a0b40a1424becf22591e, type: 2}
 --- !u!61 &342651936
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -302,8 +300,7 @@ Transform:
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 497160758}
-  - {fileID: 933237437}
+  - {fileID: 1824451791}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &342651940
@@ -351,7 +348,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85bd2a81156df94094e8f969bbb7e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterData: {fileID: 11400000, guid: b2d1dfa2b097a0b40a1424becf22591e, type: 2}
+  currentHealth: 0
+  currentRecovery: 0
+  currentMoveSpeed: 0
+  currentMight: 0
+  currentProjectileSpeed: 0
+  currentMagnet: 0
+  spawnedWeapons: []
   experience: 0
   level: 1
   experienceCap: 0
@@ -363,69 +366,11 @@ MonoBehaviour:
     endLevel: 5
     experienceCapIncrease: 200
   invincibilityDuration: 0.5
---- !u!114 &342651943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342651934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13352d9b34ca6d44dbb406bda077c6dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &422662585 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7003041219098389527, guid: ecf432f3dea6fb14c9a2f0a770333403, type: 3}
   m_PrefabInstance: {fileID: 916707354863086158}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &497160757
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 497160758}
-  - component: {fileID: 497160759}
-  m_Layer: 0
-  m_Name: Knife Controller
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &497160758
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 497160757}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 342651939}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &497160759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 497160757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39fabc16fbe9e2a4594de746a51ef73b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 1725748458873619098, guid: 5a1d3c76f4d9a924ea50dc2d1f6cf81e, type: 3}
-  weaponData: {fileID: 11400000, guid: f43271dfdcfa84c3fb044127339c1331, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,12 +538,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bat
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8242706304527905228, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551617231591863477, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8242706304527905228, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1034108625}
   m_SourcePrefab: {fileID: 100100000, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
---- !u!1 &933237435
+--- !u!1 &1034108617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
+  m_PrefabInstance: {fileID: 595524114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1034108625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034108617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f944f22ff359c48a614e05c57bfda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1824451790
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -606,44 +580,79 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 933237437}
-  - component: {fileID: 933237436}
+  - component: {fileID: 1824451791}
+  - component: {fileID: 1824451793}
+  - component: {fileID: 1824451792}
   m_Layer: 0
-  m_Name: Garlic Controller
+  m_Name: Collector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &933237436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933237435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a412166f49c10d459776a7be6d1baa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 1204468080250396103, guid: c97437ffc9cc7ba48abe6011dbfcc129, type: 3}
-  weaponData: {fileID: 11400000, guid: 426502b4ff1ff4a6fa50c6b24cefbc9c, type: 2}
---- !u!4 &933237437
+--- !u!4 &1824451791
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933237435}
+  m_GameObject: {fileID: 1824451790}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1764705, y: 1.1764705, z: 1.1764705}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 342651939}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1824451792
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824451790}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &1824451793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824451790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13352d9b34ca6d44dbb406bda077c6dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pullSpeed: 300
 --- !u!1 &2005145796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,7 +2561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7003041219098389527, guid: ecf432f3dea6fb14c9a2f0a770333403, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

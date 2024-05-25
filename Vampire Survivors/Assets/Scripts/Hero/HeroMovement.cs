@@ -17,6 +17,8 @@ public class HeroMovement : MonoBehaviour
     [HideInInspector]
     public Vector2 lastMovedV;
 
+    public CharacterScriptableObject characterData;
+
     //-------------------------------------------------------------
 
     void Start()
@@ -67,6 +69,6 @@ public class HeroMovement : MonoBehaviour
 
     void Mover()
     {
-        rb2D.velocity = new Vector2(moveDir.x * speed, moveDir.y * speed);
+        rb2D.velocity = new Vector2(moveDir.x * characterData.MoveSpeed, moveDir.y * characterData.MoveSpeed);
     }
 }

@@ -138,6 +138,8 @@ GameObject:
   - component: {fileID: 342651935}
   - component: {fileID: 342651941}
   - component: {fileID: 342651940}
+  - component: {fileID: 342651942}
+  - component: {fileID: 342651943}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Player
@@ -162,6 +164,7 @@ MonoBehaviour:
   lastHorizontalV: 0
   lastVerticalV: 0
   lastMovedV: {x: 0, y: 0}
+  characterData: {fileID: 11400000, guid: b2d1dfa2b097a0b40a1424becf22591e, type: 2}
 --- !u!61 &342651936
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -336,6 +339,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eafcb75316564063882a83b0424ab76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &342651942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342651934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85bd2a81156df94094e8f969bbb7e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterData: {fileID: 11400000, guid: b2d1dfa2b097a0b40a1424becf22591e, type: 2}
+  experience: 0
+  level: 1
+  experienceCap: 0
+  levelRanges:
+  - startLevel: 1
+    endLevel: 3
+    experienceCapIncrease: 100
+  - startLevel: 4
+    endLevel: 5
+    experienceCapIncrease: 200
+  invincibilityDuration: 0.5
+--- !u!114 &342651943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342651934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13352d9b34ca6d44dbb406bda077c6dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &422662585 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7003041219098389527, guid: ecf432f3dea6fb14c9a2f0a770333403, type: 3}
@@ -502,6 +541,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1387063274444439542, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
+      propertyPath: drops.Array.data[0].dropRate
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -1387063274444439542, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
+      propertyPath: drops.Array.data[0].itemPrefab
+      value: 
+      objectReference: {fileID: 571308776369336955, guid: 9ce123d5b6806b347a8add04da135abc, type: 3}
     - target: {fileID: 637260779160755940, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2530,7 +2577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6234042573255308896, guid: 1c12d77a6682a46858e2d1a834a982ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.2071753
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 6234042573255308896, guid: 1c12d77a6682a46858e2d1a834a982ce, type: 3}
       propertyPath: m_LocalPosition.z

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -736132127530030447}
   m_Layer: 0
   m_Name: TX Props_42
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

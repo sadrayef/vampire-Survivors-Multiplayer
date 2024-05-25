@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9222334294136410812}
   m_Layer: 3
   m_Name: TX Plant_7
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -20,5 +20,10 @@ public class GarlicBehaviour : MeleeWeaponBehaviour
 
             poisonedEnemies.Add(col.gameObject);  //Mark the enemy
         }
+        else if (col.gameObject.TryGetComponent(out BreakableProps breakable) && !poisonedEnemies.Contains(col.gameObject))
+        {
+            breakable.TakeDamage(currentDamage);
+            poisonedEnemies.Add(col.gameObject);
+        }
     }
 }

@@ -4696,7 +4696,8 @@ MonoBehaviour:
   - {fileID: 5260796258885337825, guid: edd5bc022e321e5469e66ce1f3fd6f1f, type: 3}
   - {fileID: 7709365902409797851, guid: d637938747ce6bc4881b68bfaaba734e, type: 3}
   - {fileID: 1739115427931925250, guid: fe3773b8b308f9d4da5b278a8c01ccfd, type: 3}
-  - {fileID: 1739115427931925250, guid: fe3773b8b308f9d4da5b278a8c01ccfd, type: 3}
+  - {fileID: 1514268142509190870, guid: e5ef96366a383864dbc4dc7ea6a77715, type: 3}
+  - {fileID: 5269833655918976369, guid: c8c756710bac6094bb0afc00923282aa, type: 3}
 --- !u!61 &3052432389296460136
 BoxCollider2D:
   m_ObjectHideFlags: 0

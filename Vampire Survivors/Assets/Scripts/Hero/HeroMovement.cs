@@ -71,6 +71,8 @@ public class HeroMovement : MonoBehaviour
 
     void Mover()
     {
-        rb2D.velocity = new Vector2(moveDir.x * hero.currentMoveSpeed, moveDir.y * hero.currentMoveSpeed);
+        
+            rb2D.velocity = new Vector2(moveDir.x * hero.currentMoveSpeed, moveDir.y * hero.currentMoveSpeed);
+        
     }
 }

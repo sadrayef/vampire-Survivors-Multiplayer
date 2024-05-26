@@ -5,6 +5,7 @@ using UnityEngine;
 public class DropRateManager : MonoBehaviour
 {
     [System.Serializable]
+    //nested class
     public class Drops
     {
         public string name;
@@ -13,7 +14,7 @@ public class DropRateManager : MonoBehaviour
     }
     public List <Drops> drops;
 
-    private void OnDestroy()
+    void OnDestroy()
     {
         float randomNumber = UnityEngine.Random.Range(0f, 100f);
         List<Drops> possibleDrops = new List<Drops>();

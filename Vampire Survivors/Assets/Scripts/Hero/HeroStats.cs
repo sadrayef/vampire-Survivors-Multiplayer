@@ -5,9 +5,10 @@ using UnityEngine;
 public class HeroStats : MonoBehaviour
 {
     CharacterScriptableObject characterData;
-    [HideInInspector]
+    //[HideInInspector]
     public float currentHealth;
-    [HideInInspector]
+
+    //[HideInInspector]
     public float currentRecovery;
     [HideInInspector]
     public float currentMoveSpeed;
@@ -29,6 +30,7 @@ public class HeroStats : MonoBehaviour
 
 
     [System.Serializable]
+    //nested class
     public class LevelRange
     {
         public int startLevel;
@@ -37,6 +39,7 @@ public class HeroStats : MonoBehaviour
     }
 
     public List<LevelRange> levelRanges;
+
 
     [Header("I-Frames")]
     public float invincibilityDuration;
@@ -64,9 +67,9 @@ public class HeroStats : MonoBehaviour
     }
      void Update()
     {
-        if(invincibilityDuration > 0)
+        if(invincibilityTimer > 0)
         {
-            invincibilityDuration -= Time.captureDeltaTime;
+            invincibilityTimer -= Time.deltaTime;
         }
         else if(isInvincible)
         {
@@ -105,7 +108,7 @@ public class HeroStats : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        if(!isInvincible)
+        if (!isInvincible)
         {
             currentHealth -= damage;
             invincibilityTimer = invincibilityDuration;
@@ -114,6 +117,7 @@ public class HeroStats : MonoBehaviour
             {
                 Kill();
             }
+            
         }
     }
     public void Kill()
@@ -138,7 +142,7 @@ public class HeroStats : MonoBehaviour
     {
         if(currentHealth < characterData.MaxHealth)
         {
-            currentHealth += currentHealth * Time.deltaTime;
+            currentHealth += currentHealth * Time.deltaTime * 0.0003f;
         }
         if(currentHealth > characterData.MaxHealth)
         {

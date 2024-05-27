@@ -199,4 +199,4 @@ MonoBehaviour:
   drops:
   - name: 
     itemPrefab: {fileID: 5043691745781293331, guid: a0b75b1229b8e7a469ac72cbb812d14b, type: 3}
-    dropRate: 50
+    dropRate: 100

@@ -16,7 +16,7 @@ public class HeroCollector : MonoBehaviour
 
     void Update()
     {
-        heroCollector.radius = hero.currentMagnet; 
+        heroCollector.radius = hero.CurrentMagnet; 
     }
 
     void OnTriggerEnter2D(Collider2D collision)

@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: e2777086ccd134086b2644d5c227a317, type: 2}
   currentMoveSpeed: 0
-  currentHealth: 0
+  currentHealth: 40
   currentDamage: 0
   despawnDistance: 20
 --- !u!114 &-1387063274444439542
@@ -198,5 +198,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drops:
   - name: 
-    itemPrefab: {fileID: 5043691745781293331, guid: a0b75b1229b8e7a469ac72cbb812d14b, type: 3}
-    dropRate: 100
+    itemPrefab: {fileID: 571308776369336955, guid: 9ce123d5b6806b347a8add04da135abc, type: 3}
+    dropRate: 60

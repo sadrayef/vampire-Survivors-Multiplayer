@@ -47,6 +47,11 @@ public class HeroMovement : MonoBehaviour
 
     void InputManager()
     {
+        if (GameManager.instance.isGameOver)
+        {
+            return;
+        }
+
         float Xmover = Input.GetAxisRaw("Horizontal");
         float YMover = Input.GetAxisRaw("Vertical"); 
         moveDir = new Vector2(Xmover, YMover).normalized;
@@ -71,8 +76,13 @@ public class HeroMovement : MonoBehaviour
 
     void Mover()
     {
-        
-            rb2D.velocity = new Vector2(moveDir.x * hero.currentMoveSpeed, moveDir.y * hero.currentMoveSpeed);
+
+        if (GameManager.instance.isGameOver)
+        {
+            return;
+        }
+
+        rb2D.velocity = new Vector2(moveDir.x * hero.CurrentMoveSpeed, moveDir.y * hero.CurrentMoveSpeed);
         
     }
 }

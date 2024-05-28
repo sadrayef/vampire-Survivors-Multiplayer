@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facbe9b1b8e4145d08ab98080bec6e99, type: 3}
   m_Name: Brown Bat
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  maxHealth: 1
-  damage: 5
+  moveSpeed: 2
+  maxHealth: 50
+  damage: 30

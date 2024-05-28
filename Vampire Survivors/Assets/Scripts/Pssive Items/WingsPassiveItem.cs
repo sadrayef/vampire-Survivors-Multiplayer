@@ -6,6 +6,6 @@ public class WingsPassiveItem : PassiveItem
 {
     protected override void ApplyModifier()
     {
-        hero.currentMoveSpeed *= 1 + passiveItemData.Multipier / 100f; // percent    speed * 1/,,,,
+        hero.CurrentMoveSpeed *= 1 + passiveItemData.Multipier / 100f; // percent    speed * 1/,,,,
     }
 }

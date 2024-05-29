@@ -224,6 +224,8 @@ public class HeroStats : MonoBehaviour
             }
 
             experienceCap += experienceCapIncrease;
+
+            GameManager.instance.startLevelUp();
         }
     }
 

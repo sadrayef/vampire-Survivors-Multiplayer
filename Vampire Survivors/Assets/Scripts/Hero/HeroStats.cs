@@ -1,6 +1,8 @@
  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class HeroStats : MonoBehaviour
 {
@@ -144,6 +146,11 @@ public class HeroStats : MonoBehaviour
     public int weaponIndex;
     public int passiveItemIndex;
 
+    [Header("UI")]
+    public Image healthbar;
+    public Image exBar;
+    public Text levelText;
+
 
     public GameObject fisrtPassiveItemTest, secondPassiveItemTest;
 
@@ -165,8 +172,8 @@ public class HeroStats : MonoBehaviour
         CurrentMagnet = characterData.Magnet;
 
         SpawnWeapons(characterData.StartingWeapen);
-        SpawnWeapons(secondWeaponTest);
-        SpawnPassiveItems(fisrtPassiveItemTest);
+        //SpawnWeapons(secondWeaponTest);
+        // SpawnPassiveItems(fisrtPassiveItemTest);
         SpawnPassiveItems(secondPassiveItemTest);
         
         //SpawnWeapons(secondWeaponTest);
@@ -185,8 +192,14 @@ public class HeroStats : MonoBehaviour
         GameManager.instance.currentMagnetDisplay.text = "Magnet: " + currentMagnet;
 
         GameManager.instance.AssignChosenCharacterUI(characterData);
+
+
+        UpdateHealthBar();
+        UpdateExBar();
+        UpdateLevelText();
+
     }
-     void Update()
+    void Update()
     {
         if(invincibilityTimer > 0)
         {
@@ -202,7 +215,10 @@ public class HeroStats : MonoBehaviour
     public void IncreaseExperience(int amount)
     {
         experience += amount;
+        
         LevelUpChecker();
+
+        UpdateExBar();
     }
 
      void LevelUpChecker()
@@ -225,8 +241,22 @@ public class HeroStats : MonoBehaviour
 
             experienceCap += experienceCapIncrease;
 
+            UpdateLevelText();
+
             GameManager.instance.startLevelUp();
         }
+    }
+
+
+
+    void UpdateExBar()
+    {
+        exBar.fillAmount = (float)experience / experienceCap;
+    }
+
+    void UpdateLevelText()
+    {
+        levelText.text = "lvl " + level.ToString();
     }
 
     public void TakeDamage(float damage)
@@ -240,9 +270,19 @@ public class HeroStats : MonoBehaviour
             {
                 Kill();
             }
+
+            UpdateHealthBar();
             
         }
     }
+
+
+    void UpdateHealthBar()
+    {
+        healthbar.fillAmount = currentHealth / characterData.MaxHealth;
+    }
+
+
     public void Kill()
     {
         if(!GameManager.instance.isGameOver)

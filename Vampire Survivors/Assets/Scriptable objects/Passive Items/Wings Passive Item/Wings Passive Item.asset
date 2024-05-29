@@ -15,4 +15,6 @@ MonoBehaviour:
   multipier: 50
   level: 1
   nextLevelPrefab: {fileID: 2477648124648171986, guid: 004d991648f1b4531ba07e2071c07f52, type: 3}
+  name: Wings
+  description: Increase Hero's movement by 50%
   icon: {fileID: 21300000, guid: bcaf2aa30d2f04d5db397f38c65e3797, type: 3}

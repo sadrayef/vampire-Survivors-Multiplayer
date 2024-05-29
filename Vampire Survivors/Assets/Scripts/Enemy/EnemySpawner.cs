@@ -35,6 +35,7 @@ public class EnemySpawner : MonoBehaviour
     public int maxEnemiesAllowed;
     public bool maxEnemiesReached = false;
     public float waveInterval;
+    bool isWaveActive = false;
 
     [Header("Spawn Positions")]
     public List<Transform> relativeSpawnPoints;
@@ -49,8 +50,9 @@ public class EnemySpawner : MonoBehaviour
 
      void Update()
     {
-        if(currentWaveCount < waves.Count && waves[currentWaveCount].spawnCount == 0)
+        if(currentWaveCount < waves.Count && waves[currentWaveCount].spawnCount == 0 && !isWaveActive)
         {
+            isWaveActive = true;
             StartCoroutine(BeginNextWave()); //moving on to the next wave
         } 
 
@@ -66,10 +68,11 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator BeginNextWave()
     {
-
+        isWaveActive = true;
         yield return new WaitForSeconds(waveInterval);
         if(currentWaveCount < waves.Count -1 )
         {
+            isWaveActive= false;
             currentWaveCount++;
             CalculateWaveQuota();
         }
@@ -93,17 +96,18 @@ public class EnemySpawner : MonoBehaviour
             {
                 if(enemyGroup.spawnCount < enemyGroup.enemyCount)
                 {
-                    //Limit the number of the enemies that can spawn in each waves
-                    if(enemiesAlive >= maxEnemiesAllowed)
-                    {
-                        maxEnemiesReached = true;
-                        return;
-                    }
+                    
                     Instantiate(enemyGroup.enemyPrefab, hero.position + relativeSpawnPoints[Random.Range(0, relativeSpawnPoints.Count)].position, Quaternion.identity);
 
                     enemyGroup.spawnCount++;
                     waves[currentWaveCount].spawnCount++;
                     enemiesAlive++;
+                    //Limit the number of the enemies that can spawn in each waves
+                    if (enemiesAlive >= maxEnemiesAllowed)
+                    {
+                        maxEnemiesReached = true;
+                        return;
+                    }
                 }
             }
         }

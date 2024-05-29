@@ -5,9 +5,16 @@ using UnityEngine;
 public class ExperienceGems : Pickup , ICollectible 
 {
     public int experienceGranted;
-    public void Collect()
+    public override void Collect()
     {
-        
+        if (hasBeenCollected)
+        {
+            return;
+        }
+        else
+        {
+            base.Collect();
+        }
         HeroStats hero = FindObjectOfType<HeroStats>();
         hero.IncreaseExperience(experienceGranted);
        

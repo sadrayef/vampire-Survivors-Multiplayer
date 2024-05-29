@@ -785,11 +785,11 @@ MonoBehaviour:
   - waveName: Wave 1
     enemyGroups:
     - enemyName: Bat
-      enemyCount: 2300
+      enemyCount: 3
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
     - enemyName: Brown Bat
-      enemyCount: 20000
+      enemyCount: 2
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
     waveQuota: 0
@@ -797,9 +797,9 @@ MonoBehaviour:
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 15
+  maxEnemiesAllowed: 2
   maxEnemiesReached: 0
-  waveInterval: 120
+  waveInterval: 30
   relativeSpawnPoints:
   - {fileID: 1516617798}
   - {fileID: 2080052249}
@@ -3267,7 +3267,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Display
+  m_Text: 
 --- !u!222 &505662330
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4242,7 +4242,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Display
+  m_Text: 
 --- !u!222 &666132662
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8486,7 +8486,6 @@ MonoBehaviour:
   - {fileID: 7003041219098389527, guid: ecf432f3dea6fb14c9a2f0a770333403, type: 3}
   player: {fileID: 342651934}
   checkerRadius: 5
-  noTerrainPosition: {x: 0, y: 0, z: 0}
   terrainMask:
     serializedVersion: 2
     m_Bits: 64
@@ -10754,7 +10753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7003041219098389527, guid: ecf432f3dea6fb14c9a2f0a770333403, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -152,9 +152,6 @@ public class HeroStats : MonoBehaviour
     public Text levelText;
 
 
-    public GameObject fisrtPassiveItemTest, secondPassiveItemTest;
-
-    public GameObject secondWeaponTest;
 
 
     void Awake()
@@ -174,7 +171,6 @@ public class HeroStats : MonoBehaviour
         SpawnWeapons(characterData.StartingWeapen);
         //SpawnWeapons(secondWeaponTest);
         // SpawnPassiveItems(fisrtPassiveItemTest);
-        SpawnPassiveItems(secondPassiveItemTest);
         
         //SpawnWeapons(secondWeaponTest);
     }

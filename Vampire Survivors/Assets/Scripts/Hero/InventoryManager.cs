@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -43,6 +44,8 @@ public class InventoryManager : MonoBehaviour
     public List<PassiveItemUpgrade> passiveItemUpgradeOptions = new List<PassiveItemUpgrade>();
     public List<UpgradeUI> upgradeUIOptions = new List<UpgradeUI>();
 
+
+    public List<WeaponEvolutionBlueprint> weaponEvolutions = new List<WeaponEvolutionBlueprint>();
     HeroStats hero;
 
     void Start()
@@ -287,4 +290,31 @@ public class InventoryManager : MonoBehaviour
     {
         ui.upgradeNameDisplay.transform.parent.gameObject.SetActive(true);
     }
-}
+
+    public List<WeaponEvolutionBlueprint> GetPossibleEvolutions()
+    {
+        List<WeaponEvolutionBlueprint> possibleEvolutions = new List<WeaponEvolutionBlueprint>();
+
+        foreach(WeapenController weapon in weaponSlots)
+        {
+            if(weapon != null)
+            {
+                foreach(PassiveItem catalyst in passiveItemSlots)
+                {
+                    if(catalyst != null)
+                    {
+                        foreach(WeaponEvolutionBlueprint evolution in weaponEvolutions)
+                        {
+                            if(weapon.weaponData.Level >= evolution.baseWeaponData.Level && catalyst.passiveItemData.Level >= evolution.catalystPassiveItemData.Level)
+                            {
+                                possibleEvolutions.Add(evolution);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return possibleEvolutions;
+    }
+
+}   

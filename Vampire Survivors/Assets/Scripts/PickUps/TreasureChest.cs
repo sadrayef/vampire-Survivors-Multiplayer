@@ -21,7 +21,7 @@ public class TreasureChest : MonoBehaviour
 
     public void OpenTreasureChest()
     {
-        Debug.Log("Chest opnedeedde");
+        
 
         if(inventory.GetPossibleEvolutions().Count <= 0)
         {
@@ -29,8 +29,8 @@ public class TreasureChest : MonoBehaviour
             return; 
         }
 
-        WeaponEvolutionBlueprint toEvovle = inventory.GetPossibleEvolutions()[Random.Range(0, inventory.GetPossibleEvolutions().Count)];
-        inventory.EvolveWeapon(toEvovle);
+        WeaponEvolutionBlueprint toEvolve = inventory.GetPossibleEvolutions()[Random.Range(0, inventory.GetPossibleEvolutions().Count)];
+        inventory.EvolveWeapon(toEvolve);
 
     }
 }

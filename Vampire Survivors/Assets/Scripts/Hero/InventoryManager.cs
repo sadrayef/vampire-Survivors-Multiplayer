@@ -324,24 +324,23 @@ public class InventoryManager : MonoBehaviour
         {
             WeapenController weapon = weaponSlots[weaponSlotIndex];
 
-
             if (!weapon)
             {
                 continue;
             }
 
-
             for(int catalystSlotIndex = 0 ; catalystSlotIndex < passiveItemSlots.Count; catalystSlotIndex++)
             {
                 PassiveItem catalyst = passiveItemSlots[catalystSlotIndex];
-
 
                 if (!catalyst)
                 {
                     continue;
                 }
 
-                if(weapon && catalyst && weapon.weaponData.Level >= evolution.baseWeaponData.Level && catalyst.passiveItemData.Level >= evolution.catalystPassiveItemData.Level)
+                if(weapon && catalyst && 
+                    weapon.weaponData.Level >= evolution.baseWeaponData.Level && 
+                    catalyst.passiveItemData.Level >= evolution.catalystPassiveItemData.Level)
                 {
                     GameObject evolvedWeapon = Instantiate(evolution.evolvedWeapon, transform.position, Quaternion.identity);
                     WeapenController evolvedWeaponController = evolvedWeapon.GetComponent<WeapenController>();
@@ -367,4 +366,11 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    //private void Update()
+    //{
+     //   if (GetPossibleEvolutions().Count > 0)
+     //   {
+     //       Debug.Log(GetPossibleEvolutions());
+      //  } 
+  //  }
 }   

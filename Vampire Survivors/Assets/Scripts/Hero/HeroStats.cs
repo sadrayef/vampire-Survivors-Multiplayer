@@ -301,6 +301,9 @@ public class HeroStats : MonoBehaviour
                 CurrentHealth = characterData.MaxHealth;
             }
         }
+
+        UpdateHealthBar();
+
     }
 
     void Recover()

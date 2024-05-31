@@ -317,4 +317,54 @@ public class InventoryManager : MonoBehaviour
         return possibleEvolutions;
     }
 
+
+    public void EvolveWeapon(WeaponEvolutionBlueprint evolution)
+    {
+        for(int weaponSlotIndex = 0; weaponSlotIndex < weaponSlots.Count; weaponSlotIndex ++)
+        {
+            WeapenController weapon = weaponSlots[weaponSlotIndex];
+
+
+            if (!weapon)
+            {
+                continue;
+            }
+
+
+            for(int catalystSlotIndex = 0 ; catalystSlotIndex < passiveItemSlots.Count; catalystSlotIndex++)
+            {
+                PassiveItem catalyst = passiveItemSlots[catalystSlotIndex];
+
+
+                if (!catalyst)
+                {
+                    continue;
+                }
+
+                if(weapon && catalyst && weapon.weaponData.Level >= evolution.baseWeaponData.Level && catalyst.passiveItemData.Level >= evolution.catalystPassiveItemData.Level)
+                {
+                    GameObject evolvedWeapon = Instantiate(evolution.evolvedWeapon, transform.position, Quaternion.identity);
+                    WeapenController evolvedWeaponController = evolvedWeapon.GetComponent<WeapenController>();
+
+
+                    evolvedWeapon.transform.SetParent(transform);  // setting the weapon to be a child of hero
+                    AddWeapon(weaponSlotIndex, evolvedWeaponController);
+                    Destroy(weapon.gameObject);
+
+
+                    //update level & icon
+                    weaponLevels[weaponSlotIndex] = evolvedWeaponController.weaponData.Level;
+                    weaponUISlots[weaponSlotIndex].sprite = evolvedWeaponController.weaponData.Icon;
+
+
+                    weaponUpgradeOptions.RemoveAt(evolvedWeaponController.weaponData.EvolvedUpgradeToRemove);
+
+                    Debug.LogWarning("EVOLVED!!");
+
+                    return;
+                }
+            }
+        }
+    }
+
 }   

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &73739900471941830
+--- !u!1 &6218701337150837206
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7313650277569768074}
-  - component: {fileID: 4287699126830000959}
-  - component: {fileID: 1663410259779118998}
-  - component: {fileID: 4723238401828388268}
-  - component: {fileID: -7755888956670581340}
-  - component: {fileID: -607263620074923713}
+  - component: {fileID: 6234042573255308896}
+  - component: {fileID: 6441593469450016826}
+  - component: {fileID: 7954955699772190165}
+  - component: {fileID: 2373292289584395884}
+  - component: {fileID: 2274104707637966159}
   m_Layer: 0
-  m_Name: meat yam yam
+  m_Name: Evolved Knife Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7313650277569768074
+--- !u!4 &6234042573255308896
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73739900471941830}
+  m_GameObject: {fileID: 6218701337150837206}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: 1.0574847, y: -7.2071753, z: 0}
+  m_LocalScale: {x: 2.9, y: 2.9, z: 1.6111112}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4287699126830000959
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+--- !u!212 &6441593469450016826
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73739900471941830}
+  m_GameObject: {fileID: 6218701337150837206}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -77,24 +76,38 @@ SpriteRenderer:
   m_SortingLayerID: 800755701
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -121900576, guid: c89152f271a626943ad12ec0d266d9bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d342a473c5f384061a2fc3c440401f44, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.375, y: 0.4375}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1663410259779118998
-BoxCollider2D:
+--- !u!114 &7954955699772190165
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73739900471941830}
+  m_GameObject: {fileID: 6218701337150837206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a577708add57018438a1887f9289c1bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponData: {fileID: 11400000, guid: e1498a9f05a724de4ac05a91776ff9d3, type: 2}
+  destroyAfterSeconds: 3
+--- !u!60 &2373292289584395884
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6218701337150837206}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -124,37 +137,39 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.375, y: 0.4375}
-    newSize: {x: 0.375, y: 0.4375}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.375, y: 0.4375}
-  m_EdgeRadius: 0
---- !u!114 &4723238401828388268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73739900471941830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 968bd04efb6a4d74dba1d1008c6eb2ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasBeenCollected: 0
-  healthToRestore: 100
---- !u!50 &-7755888956670581340
+  m_Points:
+    m_Paths:
+    - - {x: 0.106530145, y: -0.08485502}
+      - {x: -0.0770193, y: 0.09636533}
+      - {x: -0.23338903, y: 0.29676083}
+      - {x: -0.26721403, y: 0.29846403}
+      - {x: -0.26990876, y: 0.19666967}
+      - {x: -0.23160657, y: 0.12068089}
+      - {x: -0.14967668, y: 0.03463099}
+      - {x: 0.036694318, y: -0.16061454}
+      - {x: 0.043295816, y: -0.20421426}
+      - {x: 0.08991125, y: -0.21645854}
+      - {x: 0.20570344, y: -0.32017246}
+      - {x: 0.2656052, y: -0.31193733}
+      - {x: 0.2726034, y: -0.26130164}
+      - {x: 0.22896165, y: -0.21000874}
+      - {x: 0.15698315, y: -0.13745913}
+      - {x: 0.15703459, y: -0.09352821}
+  m_UseDelaunayMesh: 0
+--- !u!50 &2274104707637966159
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73739900471941830}
+  m_GameObject: {fileID: 6218701337150837206}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -173,19 +188,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &-607263620074923713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73739900471941830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b46158afe67992f4b953ef91e1da48f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frequency: 3
-  magnitude: 0.2
-  direction: {x: 0, y: 1, z: 0}
+  m_Constraints: 4

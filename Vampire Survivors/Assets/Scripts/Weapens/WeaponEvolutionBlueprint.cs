@@ -7,6 +7,6 @@ public class WeaponEvolutionBlueprint : ScriptableObject
 {
     public WeaponScriptableObject baseWeaponData;
     public PassiveItemScriptableObject catalystPassiveItemData;
-    public WeaponEvolutionBlueprint evolutionWeaponData;
+    public WeaponScriptableObject evolutionWeaponData;
     public GameObject evolvedWeapon;
 }

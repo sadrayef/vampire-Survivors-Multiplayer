@@ -1968,6 +1968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85bd2a81156df94094e8f969bbb7e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageEffect: {fileID: 3705665428780794818, guid: e2a512474eb15447ab800f547b51a88b, type: 3}
   experience: 0
   level: 1
   experienceCap: 0

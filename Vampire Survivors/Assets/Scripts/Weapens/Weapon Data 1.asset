@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 139b67cac69510445bfb520e07b22a3e, type: 3}
-  m_Name: Knife Weapon
+  m_Name: Weapon Data 1
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
   maxLevel: 8
@@ -18,7 +18,6 @@ MonoBehaviour:
   baseStats:
     name: Knife
     description: 
-    projectilePrefab: {fileID: -3924366176951370096, guid: 041506daa502c0c4e82db442fc73a5cc, type: 3}
     hitEffect: {fileID: 0}
     spawnVariance:
       serializedVersion: 2
@@ -40,7 +39,6 @@ MonoBehaviour:
   linearGrowth:
   - name: Leve 2
     description: 
-    projectilePrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariance:
       serializedVersion: 2
@@ -61,7 +59,6 @@ MonoBehaviour:
     masInstances: 0
   - name: Level 3
     description: 
-    projectilePrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariance:
       serializedVersion: 2
@@ -82,7 +79,6 @@ MonoBehaviour:
     masInstances: 0
   - name: Level 4
     description: 
-    projectilePrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariance:
       serializedVersion: 2
@@ -103,7 +99,6 @@ MonoBehaviour:
     masInstances: 0
   - name: Level 5
     description: 
-    projectilePrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariance:
       serializedVersion: 2
@@ -125,7 +120,6 @@ MonoBehaviour:
   randomGrowth:
   - name: 
     description: 
-    projectilePrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariance:
       serializedVersion: 2
@@ -146,7 +140,6 @@ MonoBehaviour:
     masInstances: 0
   - name: 
     description: 
-    projectilePrefab: {fileID: 0}
     hitEffect: {fileID: 0}
     spawnVariance:
       serializedVersion: 2

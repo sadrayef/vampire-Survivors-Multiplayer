@@ -14,7 +14,6 @@ public abstract class WeaponNewScript : MonoBehaviour
         public string name, description;
 
         [Header("Visuals")]
-        public Projectile projectilePrefab;
         public ParticleSystem hitEffect;
         public Rect spawnVariance;
 

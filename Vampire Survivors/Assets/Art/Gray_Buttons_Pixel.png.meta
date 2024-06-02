@@ -152,7 +152,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,6 +160,48 @@ TextureImporter:
       bones: []
       spriteID: 1ed5b9b91f283429abb85f6688460b57
       internalID: 1990516822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Buttons_Pixel_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddb9399f890c46aca8dfd2d448786a9
+      internalID: 1706058058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray_Buttons_Pixel_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a767cef1131de47049180173b004c29d
+      internalID: 79940124
       vertices: []
       indices: 
       edges: []
@@ -177,6 +219,8 @@ TextureImporter:
     nameFileIdTable:
       Gray_Buttons_Pixel_0: 319144867
       Gray_Buttons_Pixel_1: 1990516822
+      Gray_Buttons_Pixel_2: 1706058058
+      Gray_Buttons_Pixel_3: 79940124
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -156,6 +156,7 @@ public class GameManager : MonoBehaviour
                 PauseGame();
             }
         }
+
     }
 
     void DisableScreens()

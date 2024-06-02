@@ -14,9 +14,11 @@ public class HeroStats : MonoBehaviour
     float currentProjectileSpeed;
     float currentMagnet;
 
+    
 
     public ParticleSystem damageEffect;
 
+    
 
     #region Current Stats Properties
     //properties

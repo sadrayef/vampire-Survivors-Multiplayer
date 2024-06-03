@@ -40,7 +40,7 @@ public class EnemyStats : MonoBehaviour
 
      void Start()
     {
-        manager = GetComponent<GameManager>();
+        manager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
         hero = FindObjectOfType<HeroStats>().transform;
 
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Props
+  - GameManager
   layers:
   - Default
   - TransparentFX

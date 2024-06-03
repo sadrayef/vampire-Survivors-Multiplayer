@@ -245,7 +245,7 @@ public class GameManager : MonoBehaviour
 
     public void UpdateKilledEnemyCountDisplay()
     {
-        killedEnemyText.text += killedEnemyCount.ToString();
+        killedEnemyText.text = killedEnemyCount.ToString();
     }
 
     public void startLevelUp()

@@ -29,7 +29,7 @@ public class EnemyStats : MonoBehaviour
     EnemyMovement movement;
 
 
-    
+    public GameManager manager;
 
     void Awake()
     {
@@ -40,6 +40,7 @@ public class EnemyStats : MonoBehaviour
 
      void Start()
     {
+        manager = GetComponent<GameManager>();
         hero = FindObjectOfType<HeroStats>().transform;
 
 
@@ -72,6 +73,9 @@ public class EnemyStats : MonoBehaviour
         if (currentHealth <= 0)
         {
             Kill();
+
+            manager.UpdateKilledenemyCount();
+            manager.UpdateKilledEnemyCountDisplay();
         }
     }
 
@@ -87,6 +91,7 @@ public class EnemyStats : MonoBehaviour
     public void Kill()
     {
         StartCoroutine(KillFade());
+        
     }
 
     //A new coroutine

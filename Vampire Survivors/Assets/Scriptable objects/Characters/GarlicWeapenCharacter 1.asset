@@ -18,6 +18,6 @@ MonoBehaviour:
   maxHealth: 500
   recovery: 1
   moveSpeed: 3
-  might: 1
+  might: 5
   projectileSpeed: 0
   magnet: 1.8

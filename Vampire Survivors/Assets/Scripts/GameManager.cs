@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     public Text chosenCharacterName;
     public Text levelReachedDisplay;
     public Text timeSurvivedDisplay;
+    public Text killedEnemyDisplay;
     public List<UnityEngine.UI.Image> chosenWeaponsUI = new List<UnityEngine.UI.Image>(6);
     public List<UnityEngine.UI.Image> chosenPassiveUI = new List<UnityEngine.UI.Image>(6);
 
@@ -49,6 +50,11 @@ public class GameManager : MonoBehaviour
     public bool isGameOver = false;
 
     public bool choosingUpgrade;
+
+    [Header("Killed Enemy")]
+    public Text killedEnemyText;
+    int killedEnemyCount;
+
 
 
     public GameObject heroObject;
@@ -135,6 +141,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        killedEnemyDisplay.text = killedEnemyText.text;
         timeSurvivedDisplay.text = stopWatchDisplay.text;
         ChangeState(GameState.GameOver);
     }
@@ -229,6 +236,16 @@ public class GameManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(stopWatchTime % 60);
 
         stopWatchDisplay.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void UpdateKilledenemyCount()
+    {
+        killedEnemyCount++;
+    }
+
+    public void UpdateKilledEnemyCountDisplay()
+    {
+        killedEnemyText.text += killedEnemyCount.ToString();
     }
 
     public void startLevelUp()

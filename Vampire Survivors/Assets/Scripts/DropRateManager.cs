@@ -2,26 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//---------------------------------------------------------------------
+
 public class DropRateManager : MonoBehaviour
 {
+    //---------------------------------------------------------------------
+
     [System.Serializable]
     //nested class
     public class Drops
     {
         public string name;
-        public GameObject itemPrefab;
-        public float dropRate;
+        public GameObject itemPrefab; // meat or diamond
+        public float dropRate; 
     }
+
+    //---------------------------------------------------------------------
+
     public List <Drops> drops;
+
+    //---------------------------------------------------------------------
 
     void OnDestroy()
     {
-        /*
-        if (!gameObject.scene.isLoaded) //Debug the error in console -- isloasded = true -> play mode running
+        
+        if (!gameObject.scene.isLoaded) //Debug the error in console -- isloasded = true -> play mode running     // ERROR!!!!!!!!!!!
         {
             return;
         }
-        */
+        
         float randomNumber = UnityEngine.Random.Range(0f, 100f);
         List<Drops> possibleDrops = new List<Drops>();
         foreach (Drops d in drops)
@@ -37,5 +46,7 @@ public class DropRateManager : MonoBehaviour
             Instantiate(drop.itemPrefab, transform.position, Quaternion.identity);
         }
     }
+
+    //---------------------------------------------------------------------
 
 }

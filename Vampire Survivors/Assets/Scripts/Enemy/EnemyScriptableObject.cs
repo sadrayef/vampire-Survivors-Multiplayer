@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(fileName = "EnemyScriptableObject", menuName = "ScriptableObjects/Enemy")]
+
+//---------------------------------------------------------------------
+
+[CreateAssetMenu(fileName = "EnemyScriptableObject", menuName = "ScriptableObjects/Enemy")] // creating a titlw in the menu
 
 public class EnemyScriptableObject : ScriptableObject
 {
-    [SerializeField]
+    //the properties for an enemy : speed - health - damage
+
+    [SerializeField] //make the private variables accessible within the Unity editor without making them public 
     float moveSpeed;
-    public float MoveSpeed { get => moveSpeed; private set => moveSpeed = value; }
+    public float MoveSpeed { get => moveSpeed; private set => moveSpeed = value; } //using a lambda  function
 
     [SerializeField]
     float maxHealth;

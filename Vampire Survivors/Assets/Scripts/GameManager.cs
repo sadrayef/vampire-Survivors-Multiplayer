@@ -4,11 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using static GameManager;
+//the most important in the whole game
+//---------------------------------------------------------------------
+
 
 public class GameManager : MonoBehaviour
 {
+    //---------------------------------------------------------------------
+
     public static GameManager instance;
-    public enum GameState
+    public enum GameState // 4 game states
     {
         GamePlay,
         Paused,
@@ -42,7 +47,7 @@ public class GameManager : MonoBehaviour
     public List<UnityEngine.UI.Image> chosenPassiveUI = new List<UnityEngine.UI.Image>(6);
 
 
-    [Header("Stop Watch")]
+    [Header("Stop Watch")] // for yhe timer
     public float timeLimit; // in seconds
     float stopWatchTime ;
     public Text stopWatchDisplay;
@@ -51,13 +56,16 @@ public class GameManager : MonoBehaviour
 
     public bool choosingUpgrade;
 
-    [Header("Killed Enemy")]
+    [Header("Killed Enemy")] // for the enemy counter
     public Text killedEnemyText;
     int killedEnemyCount;
 
 
+    //---------------------------------------------------------------------
 
     public GameObject heroObject;
+
+    //---------------------------------------------------------------------
 
     void Awake()
     {
@@ -72,6 +80,8 @@ public class GameManager : MonoBehaviour
         }
         DisableScreens();
     }
+
+    //---------------------------------------------------------------------
 
 
     void Update()
@@ -110,10 +120,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //---------------------------------------------------------------------
+
     public void ChangeState(GameState newState)
     {
         currentState = newState;
     }
+
+    //---------------------------------------------------------------------
 
     public void PauseGame()
     {
@@ -127,6 +141,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //---------------------------------------------------------------------
+
     public void ResumeGame() 
     {
         if ((currentState == GameState.Paused))
@@ -139,6 +155,8 @@ public class GameManager : MonoBehaviour
 
     }
 
+    //---------------------------------------------------------------------
+
     public void GameOver()
     {
         killedEnemyDisplay.text = killedEnemyText.text;
@@ -146,10 +164,15 @@ public class GameManager : MonoBehaviour
         ChangeState(GameState.GameOver);
     }
 
+    //---------------------------------------------------------------------
+
     void DisplayResults()
     {
         resultsScreen.SetActive(true);
     }
+
+    //---------------------------------------------------------------------
+
     void CheckForPauseAndResume()
     {
         if(Input.GetKeyUp(KeyCode.E))
@@ -166,6 +189,8 @@ public class GameManager : MonoBehaviour
 
     }
 
+    //---------------------------------------------------------------------
+
     void DisableScreens()
     {
         pauseScreen.SetActive(false);
@@ -173,16 +198,23 @@ public class GameManager : MonoBehaviour
         levelUpScreen.SetActive(false);
     }
 
+    //---------------------------------------------------------------------
+
     public void AssignChosenCharacterUI(CharacterScriptableObject chosenCharacterData)
     {
         chosenCharacterImage.sprite = chosenCharacterData.Icon;
         chosenCharacterName.text = chosenCharacterData.Name;
     }
 
+    //---------------------------------------------------------------------
+
     public void AssignLevelReachedUI(int levelReachedData)
     {
         levelReachedDisplay.text = levelReachedData.ToString();
     }
+
+    //---------------------------------------------------------------------
+
     public void AssighnChosenPassiveAndWeaponsUI(List<UnityEngine.UI.Image> chosenWeaponData, List<UnityEngine.UI.Image> chosenPassiveData)
     {
         if(chosenWeaponData.Count != chosenWeaponsUI.Count || chosenPassiveData.Count != chosenPassiveUI.Count)
@@ -218,6 +250,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //---------------------------------------------------------------------
+
+
     void UpdateStopWatch()
     {
         stopWatchTime += Time.deltaTime;
@@ -230,6 +265,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //---------------------------------------------------------------------
+
     void UpdateStopWatchDisplay()
     {
         int minutes = Mathf.FloorToInt(stopWatchTime / 60);
@@ -238,21 +275,29 @@ public class GameManager : MonoBehaviour
         stopWatchDisplay.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
+    //---------------------------------------------------------------------
+
     public void UpdateKilledenemyCount()
     {
         killedEnemyCount++;
     }
+
+    //---------------------------------------------------------------------
 
     public void UpdateKilledEnemyCountDisplay()
     {
         killedEnemyText.text = killedEnemyCount.ToString();
     }
 
+    //---------------------------------------------------------------------
+
     public void startLevelUp()
     {
         ChangeState(GameState.LevelUp);
         heroObject.SendMessage("RemoveAndApplyUpgrades"); 
     }
+
+    //---------------------------------------------------------------------
 
     public void endLevelUp()
     {
@@ -261,4 +306,7 @@ public class GameManager : MonoBehaviour
         levelUpScreen.SetActive(false);
         ChangeState(GameState.GamePlay);
     }
+
+    //---------------------------------------------------------------------
+
 }

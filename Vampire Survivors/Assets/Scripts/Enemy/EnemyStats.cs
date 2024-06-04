@@ -2,10 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//The most important script for an enemy
+//---------------------------------------------------------------------
+
 [RequireComponent(typeof(SpriteRenderer))]
 
 public class EnemyStats : MonoBehaviour
 {
+    //---------------------------------------------------------------------
+
     public EnemyScriptableObject enemyData;
 
     [HideInInspector]
@@ -15,21 +20,26 @@ public class EnemyStats : MonoBehaviour
     [HideInInspector]
     public float currentDamage;
 
-    public float despawnDistance = 20f;
+    public float despawnDistance = 20f;  // if the enemys distance with hero is 20 or more it will destroy
     Transform hero;
 
 
-    [Header("Damage Feedback")]
-    public Color damageColor = new Color(1, 0, 0, 1);
-    public float damageFlashDuration = 0.2f;
-    public float deathFadeTime = 0.6f;
+    //---------------------------------------------------------------------
 
-    Color originalColor;
+    [Header("Damage Feedback")]
+    public Color damageColor = new Color(1, 0, 0, 1); //red
+    public float damageFlashDuration = 0.2f; // time to be red
+    public float deathFadeTime = 0.6f; // time to fade after death
+
+    Color originalColor; // back to its original color
     SpriteRenderer sr;
     EnemyMovement movement;
 
+    //---------------------------------------------------------------------
 
     public GameManager manager;
+
+    //---------------------------------------------------------------------
 
     void Awake()
     {
@@ -38,16 +48,20 @@ public class EnemyStats : MonoBehaviour
         currentDamage = enemyData.Damage;
     }
 
-     void Start()
+    //---------------------------------------------------------------------
+
+    void Start()
     {
         manager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
-        hero = FindObjectOfType<HeroStats>().transform;
+        hero = FindObjectOfType<HeroStats>().transform; // to track the hero
 
 
         sr = GetComponent<SpriteRenderer>();
-        originalColor = sr.color;
+        originalColor = sr.color; // the original enemy color
         movement = GetComponent<EnemyMovement>();
     }
+
+    //---------------------------------------------------------------------
 
     void Update()
     {
@@ -57,6 +71,7 @@ public class EnemyStats : MonoBehaviour
         }
     }
 
+    //---------------------------------------------------------------------
 
     public void TakeDamage(float dmg, Vector2 sourcePosition, float knochbackForce = 5f /*how far the knockback will be */, float knockbackDuration = 0.2f /*how long the knockback will last */)
     {
@@ -79,6 +94,7 @@ public class EnemyStats : MonoBehaviour
         }
     }
 
+    //---------------------------------------------------------------------
 
     IEnumerator DamageFlash()
     {
@@ -87,12 +103,15 @@ public class EnemyStats : MonoBehaviour
         sr.color = originalColor;
     }
 
+    //---------------------------------------------------------------------
 
     public void Kill()
     {
         StartCoroutine(KillFade());
         
     }
+
+    //---------------------------------------------------------------------
 
     //A new coroutine
     IEnumerator KillFade()
@@ -112,6 +131,7 @@ public class EnemyStats : MonoBehaviour
         Destroy(gameObject);
     }
 
+    //---------------------------------------------------------------------
 
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -123,12 +143,16 @@ public class EnemyStats : MonoBehaviour
         }
     }
 
+    //---------------------------------------------------------------------
+
     private void OnDestroy()
     {
         EnemySpawner enemySpawner = FindObjectOfType<EnemySpawner>();
         EnemySpawner eSpawner = enemySpawner;
         eSpawner.OnEnemyKilled();
     }
+
+    //---------------------------------------------------------------------
 
     void ReturnEnemy()
     {

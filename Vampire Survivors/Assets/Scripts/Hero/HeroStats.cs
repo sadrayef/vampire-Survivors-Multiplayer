@@ -1,5 +1,7 @@
  using System.Collections;
 using System.Collections.Generic;
+using Unity.Profiling;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -130,6 +132,10 @@ public class HeroStats : MonoBehaviour
     public int experienceCap = 100;
 
 
+    [Header("Coins/PowerUp")]
+    public int savingCoins = 0;
+
+
     [System.Serializable]
     //nested class
     public class LevelRange
@@ -223,7 +229,17 @@ public class HeroStats : MonoBehaviour
         UpdateExBar();
     }
 
-     void LevelUpChecker()
+
+    //IT SHOULD BE SAVED IN EVERY GAME THAT THE SAME PLAYER IS PLAY.
+    public void IncreaseCoins()
+    {
+        Debug.Log("COIN");
+        savingCoins++;
+        
+    }
+
+
+    void LevelUpChecker()
     {
         if(experience >= experienceCap)
         {

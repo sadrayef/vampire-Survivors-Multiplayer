@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drops:
   - name: 
-    itemPrefab: {fileID: 73739900471941830, guid: 2d56df85c7fff3b4bac1b0ab75c12d7f, type: 3}
+    itemPrefab: {fileID: 192484522911081076, guid: 4fea4042c6c5ef54985ae31eccd67cf8, type: 3}
     dropRate: 100
 --- !u!114 &8610035406416440976
 MonoBehaviour:

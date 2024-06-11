@@ -184,6 +184,10 @@ MonoBehaviour:
   currentHealth: 40
   currentDamage: 0
   despawnDistance: 20
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  damageFlashDuration: 0.2
+  deathFadeTime: 0.6
+  manager: {fileID: 0}
 --- !u!114 &-1387063274444439542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,4 +203,4 @@ MonoBehaviour:
   drops:
   - name: 
     itemPrefab: {fileID: 571308776369336955, guid: 9ce123d5b6806b347a8add04da135abc, type: 3}
-    dropRate: 60
+    dropRate: 70

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour
     public Text levelReachedDisplay;
     public Text timeSurvivedDisplay;
     public Text killedEnemyDisplay;
+    public Text collectedCoinsDisplay;
     public List<UnityEngine.UI.Image> chosenWeaponsUI = new List<UnityEngine.UI.Image>(6);
     public List<UnityEngine.UI.Image> chosenPassiveUI = new List<UnityEngine.UI.Image>(6);
 
@@ -59,6 +61,10 @@ public class GameManager : MonoBehaviour
     [Header("Killed Enemy")] // for the enemy counter
     public Text killedEnemyText;
     int killedEnemyCount;
+
+    [Header("Coins")]
+    public Text coinsText;
+    int coinsCount;
 
 
     //---------------------------------------------------------------------
@@ -161,6 +167,7 @@ public class GameManager : MonoBehaviour
     {
         killedEnemyDisplay.text = killedEnemyText.text;
         timeSurvivedDisplay.text = stopWatchDisplay.text;
+        collectedCoinsDisplay.text = coinsText.text;
         ChangeState(GameState.GameOver);
     }
 
@@ -287,6 +294,19 @@ public class GameManager : MonoBehaviour
     public void UpdateKilledEnemyCountDisplay()
     {
         killedEnemyText.text = killedEnemyCount.ToString();
+    }
+
+    //---------------------------------------------------------------------
+     public void UpdateCoinsCount()
+    {
+        coinsCount++;
+    }
+
+    //---------------------------------------------------------------------
+
+    public void UpdateCoinsCountDisplay()
+    {
+        coinsText.text = coinsCount.ToString();
     }
 
     //---------------------------------------------------------------------

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Garlic weapon
   m_EditorClassIdentifier: 
   prefab: {fileID: 1204468080250396103, guid: c97437ffc9cc7ba48abe6011dbfcc129, type: 3}
-  damage: 3
+  damage: 10
   speed: 0
   cooldownDuration: 3
   pierce: 0
@@ -22,3 +22,4 @@ MonoBehaviour:
   name: Garlic
   description: Creates a Garlic Zone. Vampires dont like Garlic
   icon: {fileID: 1947658368, guid: c89152f271a626943ad12ec0d266d9bb, type: 3}
+  evolvedUpgradeToRemove: 0

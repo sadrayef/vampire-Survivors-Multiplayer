@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Garlic weapon Level 3
   m_EditorClassIdentifier: 
   prefab: {fileID: 1204468080250396103, guid: 8a95e28c0c306401791f6f0468802561, type: 3}
-  damage: 3
+  damage: 15
   speed: 0
   cooldownDuration: 2.5
   pierce: 0
@@ -22,3 +22,4 @@ MonoBehaviour:
   name: Garlic Level 3
   description: Damage up by 5
   icon: {fileID: 1947658368, guid: c89152f271a626943ad12ec0d266d9bb, type: 3}
+  evolvedUpgradeToRemove: 0

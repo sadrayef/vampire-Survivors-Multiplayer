@@ -860,24 +860,20 @@ MonoBehaviour:
   - waveName: Wave 1
     enemyGroups:
     - enemyName: Bat
-      enemyCount: 5
+      enemyCount: 15
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
-    - enemyName: Brown Bat
-      enemyCount: 2
-      spawnCount: 0
-      enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
     waveQuota: 0
-    spawnInterval: 1
+    spawnInterval: 4
     spawnCount: 0
   - waveName: Wave 2
     enemyGroups:
     - enemyName: Bat
-      enemyCount: 5
+      enemyCount: 20
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
     - enemyName: Brown Bat
-      enemyCount: 3
+      enemyCount: 45
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
     waveQuota: 0
@@ -886,21 +882,62 @@ MonoBehaviour:
   - waveName: Wave 3
     enemyGroups:
     - enemyName: Bat
+      enemyCount: 80
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
+    - enemyName: Brown Bat
+      enemyCount: 120
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
+    - enemyName: Flying Eye
+      enemyCount: 120
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: d7d46d78cd00fb049aac68a1d2b4d1b8, type: 3}
+    waveQuota: 0
+    spawnInterval: 6
+    spawnCount: 0
+  - waveName: Wave 4
+    enemyGroups:
+    - enemyName: Bat
       enemyCount: 2000
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
+    - enemyName: Fling Eye
+      enemyCount: 360
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: d7d46d78cd00fb049aac68a1d2b4d1b8, type: 3}
+    - enemyName: Brown Bat
+      enemyCount: 240
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
+    - enemyName: Mushroom
+      enemyCount: 640
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: eb53d2f784c18eb47a675059a3e554e7, type: 3}
+    - enemyName: Bat
+      enemyCount: 300
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
+    - enemyName: Mushroom
+      enemyCount: 400
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: eb53d2f784c18eb47a675059a3e554e7, type: 3}
     - enemyName: Brown Bat
       enemyCount: 500
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
+    - enemyName: Flying Eye
+      enemyCount: 600
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: d7d46d78cd00fb049aac68a1d2b4d1b8, type: 3}
     waveQuota: 0
-    spawnInterval: 5
+    spawnInterval: 6
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 8
+  maxEnemiesAllowed: 30
   maxEnemiesReached: 0
-  waveInterval: 30
+  waveInterval: 45
   relativeSpawnPoints:
   - {fileID: 1516617798}
   - {fileID: 2080052249}

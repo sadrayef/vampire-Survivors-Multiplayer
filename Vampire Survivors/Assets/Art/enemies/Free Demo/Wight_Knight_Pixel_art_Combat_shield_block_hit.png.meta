@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 949b192f35af240cc880c090380bc63b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 256
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7715857b5ff0844f1aa70b52f59122de
+      internalID: 1237716676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 256
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39fe439aa9b8645abb9ba55da3455b78
+      internalID: -2136778960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 256
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26708c040ba54a98b92c1c9924a8ba6
+      internalID: -1304882057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 256
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a76950542e34160a6d7eb76d67d8de
+      internalID: 1317657670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_4
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 256
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78a13d800ea8440d8d8fa49054b5d89
+      internalID: 1619341975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_5
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 256
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73042a365301c4334997f8feb26441d4
+      internalID: -1117907359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_6
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 256
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b53c1091d1c4d5b88e3e5861330af7
+      internalID: 597404196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_7
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 256
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b358369cfe87440fa4d1bb0d84b58dc
+      internalID: 569849731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_8
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 256
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1552f1b0000e44b7e9a85732cdfaf1b6
+      internalID: -2140212505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_9
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 256
+        width: 53
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7c6ec4dea6947608483894e8ea3195
+      internalID: 533801180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 128
+        width: 53
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9242d0108372f450292345794f7c7769
+      internalID: -2083116437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_11
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 128
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af19a5baa0bc493cbb325ed41c2b3fb
+      internalID: -1983180622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_12
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 128
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f857e3f64bdc4d9c885b9889f8707ab
+      internalID: 1497060834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_13
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 128
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba191353c32b40dd8cd46b4abba44b9
+      internalID: -791474155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_14
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 128
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97877b31588b2498b8cc7c043a765e35
+      internalID: 1071208716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_15
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 128
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed38b73f0b452468fbfa8656269a3f27
+      internalID: -1453655249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_16
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 128
+        width: 57
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea9f4b1389c0413abdd5a41fd983cbd
+      internalID: 920105125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_17
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 128
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2f6d3850ebb4636ac45833e2a5ff46
+      internalID: 222412567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_18
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 128
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55afb971d197949148e015fc589a1825
+      internalID: 1867171197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_19
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 128
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18011313c29fc41a486ca14931a91194
+      internalID: 1194896902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb018afaa945d4ee6a203d559a80d76f
+      internalID: 1947220209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wight_Knight_Pixel_art_Combat_shield_block_hit_21
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206b7063441b349b7a9d90ebab468d15
+      internalID: -1023628585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_0: 1237716676
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_1: -2136778960
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_10: -2083116437
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_11: -1983180622
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_12: 1497060834
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_13: -791474155
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_14: 1071208716
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_15: -1453655249
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_16: 920105125
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_17: 222412567
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_18: 1867171197
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_19: 1194896902
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_2: -1304882057
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_20: 1947220209
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_21: -1023628585
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_3: 1317657670
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_4: 1619341975
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_5: -1117907359
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_6: 597404196
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_7: 569849731
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_8: -2140212505
+      Wight_Knight_Pixel_art_Combat_shield_block_hit_9: 533801180
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

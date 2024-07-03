@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca797b7df819050498f9ca9818d6feaf, type: 3}
+  m_Name: Evil wom
+  m_EditorClassIdentifier: 
+  icon: {fileID: -690535941, guid: 4d5e068acc5d04399ab771fbba7ae1c4, type: 3}
+  controller: {fileID: 22100000, guid: 00c7201f2662447a88f0ec5742b11767, type: 2}
+  name: Garlic User
+  startingWeapen: {fileID: 6009065588088753819, guid: a54d93b88fd4d4634be4da1a90ddef41, type: 3}
+  maxHealth: 500
+  recovery: 1
+  moveSpeed: 5
+  might: 5
+  projectileSpeed: 0
+  magnet: 1.8

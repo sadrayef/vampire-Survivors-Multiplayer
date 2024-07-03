@@ -53,4 +53,12 @@ public class HeroAnimator : MonoBehaviour
 
     //-------------------------------------------------------------
 
+    public void SetAnimatorController(RuntimeAnimatorController c)
+    {
+        if (!am)
+        {
+            am = GetComponent <Animator>();
+            am.runtimeAnimatorController = c;
+        }
+    }
 }

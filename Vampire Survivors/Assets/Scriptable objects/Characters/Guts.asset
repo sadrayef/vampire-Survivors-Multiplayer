@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca797b7df819050498f9ca9818d6feaf, type: 3}
+  m_Name: Guts
+  m_EditorClassIdentifier: 
+  icon: {fileID: -2036109591, guid: d73da10a3dc8b40d9b63589bb0100abb, type: 3}
+  controller: {fileID: 22100000, guid: f618da4ba76c047a49103cbef6add2ee, type: 2}
+  name: 'Knife User  '
+  startingWeapen: {fileID: 8771506933008600688, guid: f103cb4a8a955445c88b83f2fec3a5fe, type: 3}
+  maxHealth: 100
+  recovery: 1
+  moveSpeed: 5
+  might: 5
+  projectileSpeed: 0
+  magnet: 1.8

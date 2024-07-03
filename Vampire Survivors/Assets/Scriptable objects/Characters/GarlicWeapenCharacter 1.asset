@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca797b7df819050498f9ca9818d6feaf, type: 3}
   m_Name: GarlicWeapenCharacter 1
   m_EditorClassIdentifier: 
-  icon: {fileID: -2124343362, guid: 99f9378b0299d4d00b889a4c964d96a1, type: 3}
+  icon: {fileID: -1738485096, guid: 299da745e0ded494ebbf5aedbe1280e3, type: 3}
+  controller: {fileID: 22100000, guid: f7cbe67605d4a423b9fee2d1e66e62a4, type: 2}
   name: Garlic User
   startingWeapen: {fileID: 6009065588088753819, guid: a54d93b88fd4d4634be4da1a90ddef41, type: 3}
   maxHealth: 500

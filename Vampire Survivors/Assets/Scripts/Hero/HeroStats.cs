@@ -163,7 +163,7 @@ public class HeroStats : MonoBehaviour
     public Image exBar;
     public Text levelText;
 
-
+    HeroAnimator heroAnimator;
 
 
     void Awake()
@@ -183,8 +183,13 @@ public class HeroStats : MonoBehaviour
         SpawnWeapons(characterData.StartingWeapen);
         //SpawnWeapons(secondWeaponTest);
         // SpawnPassiveItems(fisrtPassiveItemTest);
-        
+
         //SpawnWeapons(secondWeaponTest);
+
+        heroAnimator = GetComponent<HeroAnimator>();
+        heroAnimator.SetAnimatorController(characterData.controller); 
+
+
     }
 
 

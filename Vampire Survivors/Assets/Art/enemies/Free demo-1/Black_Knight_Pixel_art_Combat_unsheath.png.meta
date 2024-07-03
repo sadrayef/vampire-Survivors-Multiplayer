@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: 66e21cfafe15747fe911d49fa4f60bdd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 48
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ad60f93b29a44fc9e4bb63d6e95662
+      internalID: -340780929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_1
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 0
+        width: 48
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aece51c61e2d49c9946b6f5881a2236
+      internalID: 450901474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_2
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 0
+        width: 47
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a028ede8210f4194acc8cdba1430770
+      internalID: 736682823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_3
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 0
+        width: 39
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89486c77de76149f3bbbac453de3d62e
+      internalID: -1555003095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_4
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 0
+        width: 39
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c7834ecad3545ba8fb7187c5f6b94e
+      internalID: 806223403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_5
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 0
+        width: 43
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc71f31f1c20a4c53bdc5a5db61a44ea
+      internalID: -1272111319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_6
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 0
+        width: 45
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd22f2427cd44ab1a39f763401a0f0e
+      internalID: -287186465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_7
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 0
+        width: 50
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3025dc900bef24b1892e1b4a237b6fe1
+      internalID: 2117622565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_8
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 0
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f4ce8d3cefb43b59b8b9be6bf76b5b
+      internalID: 1061057931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_9
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 0
+        width: 52
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac939014a5aa4475bbf0e47fc6fca9f
+      internalID: -80205884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_10
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 0
+        width: 56
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f81f0b4fc951431e9b4044451995395
+      internalID: -415382665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_11
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 0
+        width: 54
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8268c340d00ae4590876082668818d89
+      internalID: 1958387787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_12
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 0
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f8c9b84e5a34ffd874726429c18a13
+      internalID: 750397456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_13
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 0
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ef1d86ce066402db21b260897146d1
+      internalID: -1099167312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_14
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 0
+        width: 54
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edba91ca409f7497489e1c12c4365d97
+      internalID: 558488074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_15
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 0
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6313230fb064099bcd0f53d3d2d0e4
+      internalID: -992220870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_16
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 0
+        width: 53
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db868b214b8941bd9e3c5443212628b
+      internalID: -1203948784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_17
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 0
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59bcd0981107402fa6f61d249f21ed1
+      internalID: -190665445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_18
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 0
+        width: 49
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d156ef7c302c74d5ab44be7afe5f1e8e
+      internalID: 796021639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_19
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 0
+        width: 48
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97cea1c338e34dd4adde53b428aa7c4
+      internalID: -753336145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_20
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 0
+        width: 47
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b1bfdb705df4edfa91d995249235b4
+      internalID: 1035102789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_21
+      rect:
+        serializedVersion: 2
+        x: 2733
+        y: 0
+        width: 46
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059fd1647a9e04e2981f29872348bf2d
+      internalID: 165508200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_22
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 0
+        width: 48
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5b050176d164c6a8424e142e2dde47
+      internalID: 1288513628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_Knight_Pixel_art_Combat_unsheath_23
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 0
+        width: 47
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b03c971874f04d6da6dc3c5366bdb45
+      internalID: 896392228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Black_Knight_Pixel_art_Combat_unsheath_0: -340780929
+      Black_Knight_Pixel_art_Combat_unsheath_1: 450901474
+      Black_Knight_Pixel_art_Combat_unsheath_10: -415382665
+      Black_Knight_Pixel_art_Combat_unsheath_11: 1958387787
+      Black_Knight_Pixel_art_Combat_unsheath_12: 750397456
+      Black_Knight_Pixel_art_Combat_unsheath_13: -1099167312
+      Black_Knight_Pixel_art_Combat_unsheath_14: 558488074
+      Black_Knight_Pixel_art_Combat_unsheath_15: -992220870
+      Black_Knight_Pixel_art_Combat_unsheath_16: -1203948784
+      Black_Knight_Pixel_art_Combat_unsheath_17: -190665445
+      Black_Knight_Pixel_art_Combat_unsheath_18: 796021639
+      Black_Knight_Pixel_art_Combat_unsheath_19: -753336145
+      Black_Knight_Pixel_art_Combat_unsheath_2: 736682823
+      Black_Knight_Pixel_art_Combat_unsheath_20: 1035102789
+      Black_Knight_Pixel_art_Combat_unsheath_21: 165508200
+      Black_Knight_Pixel_art_Combat_unsheath_22: 1288513628
+      Black_Knight_Pixel_art_Combat_unsheath_23: 896392228
+      Black_Knight_Pixel_art_Combat_unsheath_3: -1555003095
+      Black_Knight_Pixel_art_Combat_unsheath_4: 806223403
+      Black_Knight_Pixel_art_Combat_unsheath_5: -1272111319
+      Black_Knight_Pixel_art_Combat_unsheath_6: -287186465
+      Black_Knight_Pixel_art_Combat_unsheath_7: 2117622565
+      Black_Knight_Pixel_art_Combat_unsheath_8: 1061057931
+      Black_Knight_Pixel_art_Combat_unsheath_9: -80205884
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

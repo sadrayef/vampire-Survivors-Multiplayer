@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     public Text levelReachedDisplay;
     public Text timeSurvivedDisplay;
     public Text killedEnemyDisplay;
+    //public Text highestDisplay;
     public Text collectedCoinsDisplay;
     public List<UnityEngine.UI.Image> chosenWeaponsUI = new List<UnityEngine.UI.Image>(6);
     public List<UnityEngine.UI.Image> chosenPassiveUI = new List<UnityEngine.UI.Image>(6);
@@ -60,8 +61,10 @@ public class GameManager : MonoBehaviour
 
     [Header("Killed Enemy")] // for the enemy counter
     public Text killedEnemyText;
-    int killedEnemyCount;
-
+    public Text highestKilledEnemyText;
+    float killedEnemyCount;
+    float highestScore;
+    
     [Header("Coins")]
     public Text coinsText;
     int coinsCount;
@@ -75,7 +78,9 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        if(instance == null)
+        PlayerPrefs.SetFloat("Killed Enemies", 0);
+
+        if (instance == null)
         {
             instance = this;
         }
@@ -165,6 +170,17 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        
+        if (killedEnemyCount >= PlayerPrefs.GetFloat("Killed Enemies"))
+        {
+            highestScore = killedEnemyCount;
+            
+        }
+        highestKilledEnemyText.text = killedEnemyText.text;
+        PlayerPrefs.SetFloat("Killed Enemies", highestScore);
+        PlayerPrefs.Save();
+        
+        //highestDisplay.text = highestKilledEnemyText.text;
         killedEnemyDisplay.text = killedEnemyText.text;
         timeSurvivedDisplay.text = stopWatchDisplay.text;
         collectedCoinsDisplay.text = coinsText.text;
@@ -287,6 +303,16 @@ public class GameManager : MonoBehaviour
     public void UpdateKilledenemyCount()
     {
         killedEnemyCount++;
+        
+        if (killedEnemyCount >= PlayerPrefs.GetFloat("Killed Enemies"))
+        {
+            highestScore = killedEnemyCount;
+
+        }
+        highestKilledEnemyText.text = killedEnemyCount.ToString();
+        PlayerPrefs.SetFloat("Killed Enemies", highestScore);
+        PlayerPrefs.Save();
+        
     }
 
     //---------------------------------------------------------------------

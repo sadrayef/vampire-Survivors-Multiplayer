@@ -6052,6 +6052,7 @@ MonoBehaviour:
   levelReachedDisplay: {fileID: 666132661}
   timeSurvivedDisplay: {fileID: 505662329}
   killedEnemyDisplay: {fileID: 1212003924}
+  highestDisplay: {fileID: 0}
   collectedCoinsDisplay: {fileID: 458965507}
   chosenWeaponsUI:
   - {fileID: 1077844631}
@@ -6072,6 +6073,7 @@ MonoBehaviour:
   isGameOver: 0
   choosingUpgrade: 0
   killedEnemyText: {fileID: 1425712897}
+  highestKilledEnemyText: {fileID: 0}
   coinsText: {fileID: 608332771}
   heroObject: {fileID: 342651934}
 --- !u!4 &1023422827

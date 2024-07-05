@@ -384,5 +384,11 @@ public class HeroStats : MonoBehaviour
 
     }
 
+    public void setMaxHealth()
+    {
+        currentHealth += 900;
+    }
+
+
 
 }

@@ -45,4 +45,8 @@ public class CharacterScriptableObject : ScriptableObject
     float magnet;
     public float Magnet { get => magnet; private set => magnet = value; }
 
+
+    
+
+
 }

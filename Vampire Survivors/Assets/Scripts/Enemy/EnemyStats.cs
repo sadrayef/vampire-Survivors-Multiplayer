@@ -108,7 +108,6 @@ public class EnemyStats : MonoBehaviour
     public void Kill()
     {
         StartCoroutine(KillFade());
-        
     }
 
     //---------------------------------------------------------------------

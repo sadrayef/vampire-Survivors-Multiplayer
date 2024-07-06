@@ -934,54 +934,54 @@ MonoBehaviour:
   - waveName: Wave 1
     enemyGroups:
     - enemyName: Bat
-      enemyCount: 30
+      enemyCount: 20
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
     - enemyName: Brown Bat
-      enemyCount: 40
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
     waveQuota: 0
-    spawnInterval: 4
+    spawnInterval: 2
     spawnCount: 0
   - waveName: Wave 2
     enemyGroups:
     - enemyName: Bat
-      enemyCount: 40
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
     - enemyName: Brown Bat
-      enemyCount: 50
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
     - enemyName: Flying Eye
-      enemyCount: 80
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: d7d46d78cd00fb049aac68a1d2b4d1b8, type: 3}
     waveQuota: 0
-    spawnInterval: 6
+    spawnInterval: 3
     spawnCount: 0
   - waveName: Wave 3
     enemyGroups:
     - enemyName: Bat
-      enemyCount: 50
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
     - enemyName: Fling Eye
-      enemyCount: 70
+      enemyCount: 40
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: d7d46d78cd00fb049aac68a1d2b4d1b8, type: 3}
     - enemyName: Queen
-      enemyCount: 80
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: eb53d2f784c18eb47a675059a3e554e7, type: 3}
     waveQuota: 0
-    spawnInterval: 6
+    spawnInterval: 3
     spawnCount: 0
   - waveName: Wave 4
     enemyGroups:
     - enemyName: Boss Fight
-      enemyCount: 1
+      enemyCount: 5
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: 5ca36962d9fd0d4419f741b7e3a3c5da, type: 3}
     - enemyName: Fling Eye
@@ -993,7 +993,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: eb53d2f784c18eb47a675059a3e554e7, type: 3}
     waveQuota: 0
-    spawnInterval: 6
+    spawnInterval: 3
     spawnCount: 0
   - waveName: End Wave
     enemyGroups:
@@ -1006,9 +1006,9 @@ MonoBehaviour:
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 300
+  maxEnemiesAllowed: 1000
   maxEnemiesReached: 0
-  waveInterval: 120
+  waveInterval: 360
   relativeSpawnPoints:
   - {fileID: 1516617798}
   - {fileID: 2080052249}

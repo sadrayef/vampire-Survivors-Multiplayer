@@ -47,7 +47,6 @@ public class PlayfabManager : MonoBehaviour
             Password = passwordInput.text,
         };
         PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnError);
-        
     }
 
     public void OnLoginSuccess(LoginResult result)

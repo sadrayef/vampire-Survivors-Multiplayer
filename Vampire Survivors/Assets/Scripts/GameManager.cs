@@ -61,12 +61,14 @@ public class GameManager : MonoBehaviour
 
     [Header("Killed Enemy")] // for the enemy counter
     public Text killedEnemyText;
-    public Text highestKilledEnemyText;
+    //public Text highestKilledEnemyText;
     float killedEnemyCount;
     float highestScore;
     
     [Header("Coins")]
     public Text coinsText;
+    public Text allCoinsText;
+    int allCoins;
     int coinsCount;
 
 
@@ -78,7 +80,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        PlayerPrefs.SetFloat("Killed Enemies", 0);
+        //PlayerPrefs.SetFloat("Killed Enemies", 0);
 
         if (instance == null)
         {
@@ -171,17 +173,29 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         
-        if (killedEnemyCount >= PlayerPrefs.GetFloat("Killed Enemies"))
+        if (killedEnemyCount > (int)PlayerPrefs.GetFloat("Killed Enemies"))
         {
             highestScore = killedEnemyCount;
-            
+            PlayerPrefs.SetFloat("Killed Enemies", highestScore);
+
         }
-        highestKilledEnemyText.text = killedEnemyText.text;
-        PlayerPrefs.SetFloat("Killed Enemies", highestScore);
-        PlayerPrefs.Save();
+        //highestKilledEnemyText.text = highestScore.ToString();
         
-        //highestDisplay.text = highestKilledEnemyText.text;
-        killedEnemyDisplay.text = killedEnemyText.text;
+        PlayerPrefs.Save();
+        allCoins = (int)PlayerPrefs.GetFloat("All coins");
+        allCoins += coinsCount;
+        allCoinsText.text = allCoins.ToString();
+        PlayerPrefs.SetFloat("All coins", allCoins);
+        PlayerPrefs.Save();
+        /*
+        allCoinsText.text = allCoins.ToString();
+        PlayerPrefs.SetFloat("All coins", allCoins);
+        PlayerPrefs.Save();
+        */
+   
+
+    //highestDisplay.text = highestKilledEnemyText.text;
+    killedEnemyDisplay.text = killedEnemyText.text;
         timeSurvivedDisplay.text = stopWatchDisplay.text;
         collectedCoinsDisplay.text = coinsText.text;
         ChangeState(GameState.GameOver);
@@ -303,15 +317,16 @@ public class GameManager : MonoBehaviour
     public void UpdateKilledenemyCount()
     {
         killedEnemyCount++;
-        
+        /*
         if (killedEnemyCount >= PlayerPrefs.GetFloat("Killed Enemies"))
         {
             highestScore = killedEnemyCount;
 
         }
-        highestKilledEnemyText.text = killedEnemyCount.ToString();
-        PlayerPrefs.SetFloat("Killed Enemies", highestScore);
-        PlayerPrefs.Save();
+        */
+        //highestKilledEnemyText.text = highestScore.ToString();
+        //PlayerPrefs.SetFloat("Killed Enemies", highestScore);
+        //PlayerPrefs.Save();
         
     }
 
@@ -326,6 +341,14 @@ public class GameManager : MonoBehaviour
      public void UpdateCoinsCount()
     {
         coinsCount++;
+        
+        //allCoins += coinsCount;
+        //allCoins += 1;
+        /*
+        allCoinsText.text = allCoins.ToString();
+        PlayerPrefs.SetFloat("All coins", allCoins);
+        PlayerPrefs.Save();
+        */
     }
 
     //---------------------------------------------------------------------

@@ -173,9 +173,9 @@ public class HeroStats : MonoBehaviour
 
         inventory = GetComponent<InventoryManager>();
 
-        CurrentHealth = characterData.MaxHealth;
+        CurrentHealth = characterData.MaxHealth + (int)PlayerPrefs.GetFloat("hCount");
         CurrentRecovery = characterData.Recovery;
-        CurrentMoveSpeed = characterData.MoveSpeed;
+        CurrentMoveSpeed = characterData.MoveSpeed + (int)PlayerPrefs.GetFloat("sCount");
         CurrentMight = characterData.Might;
         CurrentProjectileSpeed = characterData.ProjectileSpeed;
         CurrentMagnet = characterData.Magnet;

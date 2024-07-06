@@ -20,6 +20,6 @@ MonoBehaviour:
   level: 2
   nextLevelPrefab: {fileID: 0}
   name: Garlic Level 3
-  description: Damage up by 5
+  description: Damage up by 2.5
   icon: {fileID: 1947658368, guid: c89152f271a626943ad12ec0d266d9bb, type: 3}
   evolvedUpgradeToRemove: 0

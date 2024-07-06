@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: facbe9b1b8e4145d08ab98080bec6e99, type: 3}
-  m_Name: Mushroom
+  m_Name: Boss Fight
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  maxHealth: 50
-  damage: 50
+  moveSpeed: 3
+  maxHealth: 1000
+  damage: 75

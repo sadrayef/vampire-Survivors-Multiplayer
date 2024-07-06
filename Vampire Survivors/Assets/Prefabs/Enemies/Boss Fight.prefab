@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -1481082202150424837}
   - component: {fileID: -1387063274444439542}
   m_Layer: 0
-  m_Name: Mushroom
+  m_Name: Boss Fight
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 800755701
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1440952699, guid: fe218533c1aed724fb4f113905d9f909, type: 3}
+  m_Sprite: {fileID: 2531737639002577998, guid: b0ab8ce08bf696040859b24ca11a4e00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 1445299989032373235}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d1a874d0f987c854cb702e83b2b87d90, type: 2}
+  m_Controller: {fileID: 9100000, guid: b818af1f1b9abb64da47b45e0e943613, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -145,8 +145,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.78125, y: 1.15625}
+    pivot: {x: 0.47252747, y: -0.009345795}
+    oldSize: {x: 0.91, y: 1.07}
     newSize: {x: 0.84375, y: 0.6875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 80fbdf30a91d105498f4cdb5cf708597, type: 2}
   currentMoveSpeed: 0
-  currentHealth: 100
+  currentHealth: 1000
   currentDamage: 0
   despawnDistance: 20
   damageColor: {r: 1, g: 0, b: 0, a: 1}
@@ -202,5 +202,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drops:
   - name: 
-    itemPrefab: {fileID: 571308776369336955, guid: 3a60dcc9fc38ec34782cb6ae0e645e3a, type: 3}
+    itemPrefab: {fileID: 192484522911081076, guid: dd292c8864732304599f341b9c8f491f, type: 3}
+    dropRate: 100
+  - name: 
+    itemPrefab: {fileID: 192484522911081076, guid: dd292c8864732304599f341b9c8f491f, type: 3}
+    dropRate: 100
+  - name: 
+    itemPrefab: {fileID: 192484522911081076, guid: dd292c8864732304599f341b9c8f491f, type: 3}
+    dropRate: 100
+  - name: 
+    itemPrefab: {fileID: 192484522911081076, guid: dd292c8864732304599f341b9c8f491f, type: 3}
     dropRate: 100

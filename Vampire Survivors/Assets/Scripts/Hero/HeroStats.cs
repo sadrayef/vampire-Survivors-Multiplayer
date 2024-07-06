@@ -243,6 +243,12 @@ public class HeroStats : MonoBehaviour
         
     }
 
+    public void IncreaseCoinsBy50()
+    {
+        Debug.Log("COIN");
+        savingCoins+= 50;
+
+    }
 
     void LevelUpChecker()
     {

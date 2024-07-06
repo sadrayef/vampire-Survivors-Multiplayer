@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Knife weapon Level 2
   m_EditorClassIdentifier: 
   prefab: {fileID: 6218701337150837206, guid: 71d985cb9d02240329d899884c3522e7, type: 3}
-  damage: 5
+  damage: 15
   speed: 15
   cooldownDuration: 2
   pierce: 1
@@ -22,3 +22,4 @@ MonoBehaviour:
   name: Knife Level 2
   description: Speed up to 3
   icon: {fileID: 21300000, guid: abad61771498eaa4cb5ecf408161bee2, type: 3}
+  evolvedUpgradeToRemove: 0

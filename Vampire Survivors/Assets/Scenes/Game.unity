@@ -934,84 +934,81 @@ MonoBehaviour:
   - waveName: Wave 1
     enemyGroups:
     - enemyName: Bat
-      enemyCount: 15
+      enemyCount: 30
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
+    - enemyName: Brown Bat
+      enemyCount: 40
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
     waveQuota: 0
     spawnInterval: 4
     spawnCount: 0
   - waveName: Wave 2
     enemyGroups:
     - enemyName: Bat
-      enemyCount: 20
+      enemyCount: 40
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
     - enemyName: Brown Bat
-      enemyCount: 45
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
+    - enemyName: Flying Eye
+      enemyCount: 80
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: d7d46d78cd00fb049aac68a1d2b4d1b8, type: 3}
     waveQuota: 0
-    spawnInterval: 4
+    spawnInterval: 6
     spawnCount: 0
   - waveName: Wave 3
     enemyGroups:
     - enemyName: Bat
-      enemyCount: 80
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
-    - enemyName: Brown Bat
-      enemyCount: 120
-      spawnCount: 0
-      enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
-    - enemyName: Flying Eye
-      enemyCount: 120
+    - enemyName: Fling Eye
+      enemyCount: 70
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: d7d46d78cd00fb049aac68a1d2b4d1b8, type: 3}
+    - enemyName: Queen
+      enemyCount: 80
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: eb53d2f784c18eb47a675059a3e554e7, type: 3}
     waveQuota: 0
     spawnInterval: 6
     spawnCount: 0
   - waveName: Wave 4
     enemyGroups:
-    - enemyName: Bat
-      enemyCount: 2000
+    - enemyName: Boss Fight
+      enemyCount: 1
       spawnCount: 0
-      enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
+      enemyPrefab: {fileID: 1445299989032373235, guid: 5ca36962d9fd0d4419f741b7e3a3c5da, type: 3}
     - enemyName: Fling Eye
-      enemyCount: 360
+      enemyCount: 20
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: d7d46d78cd00fb049aac68a1d2b4d1b8, type: 3}
-    - enemyName: Brown Bat
-      enemyCount: 240
-      spawnCount: 0
-      enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
-    - enemyName: Mushroom
-      enemyCount: 640
+    - enemyName: Queen
+      enemyCount: 40
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: eb53d2f784c18eb47a675059a3e554e7, type: 3}
-    - enemyName: Bat
-      enemyCount: 300
-      spawnCount: 0
-      enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
-    - enemyName: Mushroom
-      enemyCount: 400
-      spawnCount: 0
-      enemyPrefab: {fileID: 1445299989032373235, guid: eb53d2f784c18eb47a675059a3e554e7, type: 3}
-    - enemyName: Brown Bat
-      enemyCount: 500
-      spawnCount: 0
-      enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
-    - enemyName: Flying Eye
-      enemyCount: 600
-      spawnCount: 0
-      enemyPrefab: {fileID: 1445299989032373235, guid: d7d46d78cd00fb049aac68a1d2b4d1b8, type: 3}
     waveQuota: 0
     spawnInterval: 6
     spawnCount: 0
+  - waveName: End Wave
+    enemyGroups:
+    - enemyName: Shinigami
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 1445299989032373235, guid: 43141b2d9736c5548a90712091dd3e3f, type: 3}
+    waveQuota: 0
+    spawnInterval: 10
+    spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 30
+  maxEnemiesAllowed: 300
   maxEnemiesReached: 0
-  waveInterval: 45
+  waveInterval: 120
   relativeSpawnPoints:
   - {fileID: 1516617798}
   - {fileID: 2080052249}

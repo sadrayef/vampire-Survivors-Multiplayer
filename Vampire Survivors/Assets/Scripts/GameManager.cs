@@ -351,6 +351,19 @@ public class GameManager : MonoBehaviour
         */
     }
 
+    public void UpdateCoinsCountBy50()
+    {
+        coinsCount+= 50;
+
+        //allCoins += coinsCount;
+        //allCoins += 1;
+        /*
+        allCoinsText.text = allCoins.ToString();
+        PlayerPrefs.SetFloat("All coins", allCoins);
+        PlayerPrefs.Save();
+        */
+    }
+
     //---------------------------------------------------------------------
 
     public void UpdateCoinsCountDisplay()

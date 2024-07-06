@@ -12,6 +12,7 @@ public class PlayfabManager : MonoBehaviour
     public GameObject loginPage;
     public InputField passwordInput;
     public InputField emailInput;
+    public Text AccountDetails;
 
 
     public void RegisterButton()
@@ -28,15 +29,14 @@ public class PlayfabManager : MonoBehaviour
             RequireBothUsernameAndEmail = false
         };
         PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess,  OnError);
-        if (messageText.text == "Registered and logged in!")
-        {
-            loginPage.SetActive(false);
-        }
+        
     }
 
     void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
         messageText.text = "Registered and logged in!";
+        AccountDetails.text = emailInput.text;
+        loginPage.SetActive(false);
     }
 
     public void LoginButton()
@@ -47,15 +47,14 @@ public class PlayfabManager : MonoBehaviour
             Password = passwordInput.text,
         };
         PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnError);
-        if (messageText.text == "Logged in!")
-        {
-            loginPage.SetActive(false);
-        }
+        
     }
 
     public void OnLoginSuccess(LoginResult result)
     {
         messageText.text = "Logged in!";
+        AccountDetails.text = emailInput.text;
+        loginPage.SetActive(false);
     }
 
     public void ResetPasswordButton()
@@ -77,8 +76,9 @@ public class PlayfabManager : MonoBehaviour
 
     private void Start()
     {
-        Login();
-        loginPage.SetActive(true);
+        //Login();   //it was before login with email address
+        //loginPage.SetActive(true);
+        AccountDetails.text = "Playing as a Guest.";
     }
 
     void Login()

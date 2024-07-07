@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -181,12 +181,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 80fbdf30a91d105498f4cdb5cf708597, type: 2}
   currentMoveSpeed: 0
-  currentHealth: 1000
+  currentHealth: 10000
   currentDamage: 0
   despawnDistance: 20
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   damageFlashDuration: 0
-  deathFadeTime: 0.6
+  deathFadeTime: 5
   manager: {fileID: 0}
 --- !u!114 &-1387063274444439542
 MonoBehaviour:

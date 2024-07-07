@@ -938,7 +938,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: cbb780806acb8b646ac579539f88ebd0, type: 3}
     - enemyName: Brown Bat
-      enemyCount: 30
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: 32ecd4d5cc33c3141a5042a914e80aa3, type: 3}
     waveQuota: 0
@@ -959,7 +959,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: d7d46d78cd00fb049aac68a1d2b4d1b8, type: 3}
     waveQuota: 0
-    spawnInterval: 3
+    spawnInterval: 2
     spawnCount: 0
   - waveName: Wave 3
     enemyGroups:
@@ -976,7 +976,7 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 1445299989032373235, guid: eb53d2f784c18eb47a675059a3e554e7, type: 3}
     waveQuota: 0
-    spawnInterval: 3
+    spawnInterval: 2
     spawnCount: 0
   - waveName: Wave 4
     enemyGroups:
@@ -1008,7 +1008,7 @@ MonoBehaviour:
   enemiesAlive: 0
   maxEnemiesAllowed: 1000
   maxEnemiesReached: 0
-  waveInterval: 360
+  waveInterval: 75
   relativeSpawnPoints:
   - {fileID: 1516617798}
   - {fileID: 2080052249}
@@ -2236,22 +2236,22 @@ MonoBehaviour:
   levelRanges:
   - startLevel: 1
     endLevel: 3
-    experienceCapIncrease: 100
+    experienceCapIncrease: 300
   - startLevel: 4
     endLevel: 5
-    experienceCapIncrease: 200
+    experienceCapIncrease: 100
   - startLevel: 6
     endLevel: 7
-    experienceCapIncrease: 300
+    experienceCapIncrease: 2000
   - startLevel: 8
     endLevel: 9
-    experienceCapIncrease: 400
+    experienceCapIncrease: 3000
   - startLevel: 10
     endLevel: 11
-    experienceCapIncrease: 500
+    experienceCapIncrease: 4000
   - startLevel: 12
     endLevel: 13
-    experienceCapIncrease: 650
+    experienceCapIncrease: 5000
   - startLevel: 14
     endLevel: 15
     experienceCapIncrease: 800
@@ -6264,6 +6264,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f89543d03d4504f4aaea519a38eac850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1029288833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1029288835}
+  - component: {fileID: 1029288834}
+  m_Layer: 0
+  m_Name: 'Playfab Manager '
+  m_TagString: PlayfabManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1029288834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029288833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c826845123f2ba849ab2be45ef1cd4dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rowPrefab: {fileID: 0}
+  rowParent: {fileID: 0}
+  messageText: {fileID: 0}
+  loginPage: {fileID: 0}
+  passwordInput: {fileID: 0}
+  emailInput: {fileID: 0}
+  AccountDetails: {fileID: 0}
+--- !u!4 &1029288835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029288833}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 550.6185, y: 133.11557, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1041159081
 GameObject:
   m_ObjectHideFlags: 0
@@ -13123,3 +13174,4 @@ SceneRoots:
   - {fileID: 3053196589111118739}
   - {fileID: 4075066652772587688}
   - {fileID: 57285199}
+  - {fileID: 1029288835}

@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: edf8c7dfa477f874c8b3b1ae26217fa0, type: 2}
   currentMoveSpeed: 0
-  currentHealth: 150
+  currentHealth: 500
   currentDamage: 0
   despawnDistance: 20
   damageColor: {r: 1, g: 0, b: 0, a: 1}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Queen
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxHealth: 500
-  damage: 50
+  maxHealth: 5000
+  damage: 80

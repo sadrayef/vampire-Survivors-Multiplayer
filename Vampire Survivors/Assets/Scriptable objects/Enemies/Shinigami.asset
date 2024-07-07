@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facbe9b1b8e4145d08ab98080bec6e99, type: 3}
   m_Name: Shinigami
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  maxHealth: 10000
-  damage: 500
+  moveSpeed: 15
+  maxHealth: 1000000
+  damage: 10000

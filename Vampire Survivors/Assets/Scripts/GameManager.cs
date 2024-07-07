@@ -181,6 +181,7 @@ public class GameManager : MonoBehaviour
         }
         //highestKilledEnemyText.text = highestScore.ToString();
         
+
         PlayerPrefs.Save();
         allCoins = (int)PlayerPrefs.GetFloat("All coins");
         allCoins += coinsCount;
@@ -199,6 +200,11 @@ public class GameManager : MonoBehaviour
         timeSurvivedDisplay.text = stopWatchDisplay.text;
         collectedCoinsDisplay.text = coinsText.text;
         ChangeState(GameState.GameOver);
+
+       
+        //highestKilledEnemyText.text = highestScore.ToString();
+        PlayfabManager pm = GameObject.FindWithTag("PlayfabManager").GetComponent<PlayfabManager>();
+        pm.SendLeaderboard(10);
     }
 
     //---------------------------------------------------------------------

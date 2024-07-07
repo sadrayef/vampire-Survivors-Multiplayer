@@ -16,7 +16,7 @@ MonoBehaviour:
   controller: {fileID: 22100000, guid: 00c7201f2662447a88f0ec5742b11767, type: 2}
   name: Garlic User
   startingWeapen: {fileID: 6009065588088753819, guid: a54d93b88fd4d4634be4da1a90ddef41, type: 3}
-  maxHealth: 500
+  maxHealth: 300
   recovery: 1
   moveSpeed: 5
   might: 5

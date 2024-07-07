@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Brown Bat
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxHealth: 25
+  maxHealth: 100
   damage: 30

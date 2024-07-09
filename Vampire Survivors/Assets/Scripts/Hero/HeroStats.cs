@@ -197,12 +197,12 @@ public class HeroStats : MonoBehaviour
     {
         experienceCap = levelRanges[0].experienceCapIncrease;
 
-        GameManager.instance.currentHealthDisplay.text = "Health: " + currentHealth;
+        GameManager.instance.currentHealthDisplay.text = "Health: " + currentHealth + PlayerPrefs.GetFloat("Health");
         GameManager.instance.currentRecoveryDisplay.text = "Recovery: " + currentRecovery;
-        GameManager.instance.currentMoveSpeedDisplay.text = "Move Speed: " + currentMoveSpeed;
+        GameManager.instance.currentMoveSpeedDisplay.text = "Move Speed: " + currentMoveSpeed + PlayerPrefs.GetFloat("Speed");
         GameManager.instance.currentMightDisplay.text = "Might: " + currentMight;
         GameManager.instance.currentProjectileSpeedDisplay.text = "Projectile Speed: " + currentProjectileSpeed;
-        GameManager.instance.currentMagnetDisplay.text = "Magnet: " + currentMagnet;
+        GameManager.instance.currentMagnetDisplay.text = "Magnet: " + currentMagnet + PlayerPrefs.GetFloat("Magnet");
 
         GameManager.instance.AssignChosenCharacterUI(characterData);
 

@@ -12,6 +12,11 @@ public class PowerUp : MonoBehaviour
     public int speed;
     public int magnet;
 
+    public int savedHelath;
+    public int savedSpeed;
+    public int savedMagnet;
+
+
     public GameObject labelHealth;
     public GameObject labelSpeed;
     public GameObject labelMagnet;
@@ -36,6 +41,10 @@ public class PowerUp : MonoBehaviour
         hCount = (int)PlayerPrefs.GetFloat("hCount");
         sCount = (int)PlayerPrefs.GetFloat("sCount");
         mCount = (int)PlayerPrefs.GetFloat("mCount");
+
+        savedHelath = (int)PlayerPrefs.GetFloat("Health");
+        savedSpeed = (int)PlayerPrefs.GetFloat("Speed");
+        savedMagnet = (int)PlayerPrefs.GetFloat("Magnet");
 
         labelHealth.SetActive(true);
         labelSpeed.SetActive(true);

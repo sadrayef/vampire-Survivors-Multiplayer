@@ -16,7 +16,16 @@ public class HeroStats : MonoBehaviour
     float currentProjectileSpeed;
     float currentMagnet;
 
-    
+
+    public int savedHelath;
+    public int savedSpeed;
+    public int savedMagnet;
+
+    public float maxedHelath;
+    public float maxedSpeed;
+    public float maxedMagnet;
+
+
 
     public ParticleSystem damageEffect;
 
@@ -174,12 +183,17 @@ public class HeroStats : MonoBehaviour
 
         inventory = GetComponent<InventoryManager>();
 
-        CurrentHealth = (int)(characterData.MaxHealth + (int)PlayerPrefs.GetFloat("hCount"));
+        maxedHelath = (int)(characterData.MaxHealth + (int)PlayerPrefs.GetFloat("Health"));
+        maxedSpeed = characterData.MoveSpeed + (int)PlayerPrefs.GetFloat("Speed");
+        maxedMagnet = characterData.Magnet + (int)PlayerPrefs.GetFloat("Magnet");
+
+
+        CurrentHealth = (int)(characterData.MaxHealth + (int)PlayerPrefs.GetFloat("Health"));
         CurrentRecovery = characterData.Recovery;
-        CurrentMoveSpeed = characterData.MoveSpeed + (int)PlayerPrefs.GetFloat("sCount");
+        CurrentMoveSpeed = characterData.MoveSpeed + (int)PlayerPrefs.GetFloat("Speed");
         CurrentMight = characterData.Might;
         CurrentProjectileSpeed = characterData.ProjectileSpeed;
-        CurrentMagnet = characterData.Magnet;
+        CurrentMagnet = characterData.Magnet + (int)PlayerPrefs.GetFloat("Magnet");
 
         SpawnWeapons(characterData.StartingWeapen);
         //SpawnWeapons(secondWeaponTest);
@@ -198,14 +212,13 @@ public class HeroStats : MonoBehaviour
     {
         experienceCap = levelRanges[0].experienceCapIncrease;
 
-        GameManager.instance.healthDisplay.text = "Health: " + currentHealth + PlayerPrefs.GetFloat("Health");
-
-        GameManager.instance.currentHealthDisplay.text = "Health: " + currentHealth + PlayerPrefs.GetFloat("Health");
+        GameManager.instance.healthDisplay.text = "Health: " + currentHealth ;
+        GameManager.instance.currentHealthDisplay.text = "Health: " + currentHealth;
         GameManager.instance.currentRecoveryDisplay.text = "Recovery: " + currentRecovery;
-        GameManager.instance.currentMoveSpeedDisplay.text = "Move Speed: " + currentMoveSpeed + PlayerPrefs.GetFloat("Speed");
+        GameManager.instance.currentMoveSpeedDisplay.text = "Move Speed: " + currentMoveSpeed ;
         GameManager.instance.currentMightDisplay.text = "Might: " + currentMight;
         GameManager.instance.currentProjectileSpeedDisplay.text = "Projectile Speed: " + currentProjectileSpeed;
-        GameManager.instance.currentMagnetDisplay.text = "Magnet: " + currentMagnet + PlayerPrefs.GetFloat("Magnet");
+        GameManager.instance.currentMagnetDisplay.text = "Magnet: " + currentMagnet ;
 
         GameManager.instance.AssignChosenCharacterUI(characterData);
 
@@ -217,7 +230,12 @@ public class HeroStats : MonoBehaviour
     }
     void Update()
     {
-        if(invincibilityTimer > 0)
+
+        savedHelath = (int)PlayerPrefs.GetFloat("Health");
+        savedSpeed = (int)PlayerPrefs.GetFloat("Speed");
+        savedMagnet = (int)PlayerPrefs.GetFloat("Magnet");
+
+        if (invincibilityTimer > 0)
         {
             invincibilityTimer -= Time.deltaTime;
         }
@@ -316,7 +334,7 @@ public class HeroStats : MonoBehaviour
 
     void UpdateHealthBar()
     {
-        healthbar.fillAmount = currentHealth / characterData.MaxHealth;
+        healthbar.fillAmount = currentHealth / maxedHelath;
     }
 
 
@@ -333,13 +351,13 @@ public class HeroStats : MonoBehaviour
 
     public void RestoreHealth(int amount)
     {
-        if(CurrentHealth < characterData.MaxHealth)
+        if(CurrentHealth < maxedHelath)
         {
             CurrentHealth += amount;
 
-            if(CurrentHealth > characterData.MaxHealth)
+            if(CurrentHealth > maxedHelath)
             {
-                CurrentHealth = (int)characterData.MaxHealth;
+                CurrentHealth = (int)maxedHelath;
             }
         }
 
@@ -349,13 +367,13 @@ public class HeroStats : MonoBehaviour
 
     void Recover()
     {
-        if(CurrentHealth < characterData.MaxHealth)
+        if(CurrentHealth < maxedHelath)
         {
            CurrentHealth += CurrentHealth * (int)(Time.deltaTime * 0.0003f);
         }
-        if(CurrentHealth > characterData.MaxHealth)
+        if(CurrentHealth > maxedHelath)
         {
-            CurrentHealth = (int)characterData.MaxHealth;
+            CurrentHealth = (int)maxedHelath;
         }
     }
 
@@ -364,7 +382,7 @@ public class HeroStats : MonoBehaviour
 
         if(passiveItemIndex >= inventory.passiveItemSlots.Count - 1)
         {
-            Debug.LogError("Invemtory slots re already full!!!");
+            Debug.LogError("Inventory slots re already full!!!");
             return;
         }
         GameObject spawnedPassiveItem = Instantiate(passiveItem, transform.position, Quaternion.identity);

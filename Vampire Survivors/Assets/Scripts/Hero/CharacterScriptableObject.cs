@@ -23,7 +23,7 @@ public class CharacterScriptableObject : ScriptableObject
 
     [SerializeField]
     float maxHealth;
-    public float MaxHealth { get => maxHealth; private set => maxHealth = value; }
+    public float MaxHealth { get => maxHealth; private set => maxHealth = value + (int)PlayerPrefs.GetFloat("Health"); }
 
     [SerializeField]
     float recovery;
@@ -31,7 +31,7 @@ public class CharacterScriptableObject : ScriptableObject
 
     [SerializeField]
     float moveSpeed;
-    public float MoveSpeed { get => moveSpeed; private set => moveSpeed = value; }
+    public float MoveSpeed { get => moveSpeed; private set => moveSpeed = value + (int)PlayerPrefs.GetFloat("Speed"); }
 
     [SerializeField]
     float might;
@@ -43,7 +43,7 @@ public class CharacterScriptableObject : ScriptableObject
 
     [SerializeField]
     float magnet;
-    public float Magnet { get => magnet; private set => magnet = value; }
+    public float Magnet { get => magnet; private set => magnet = value + (int)PlayerPrefs.GetFloat("Magnet"); }
 
 
     

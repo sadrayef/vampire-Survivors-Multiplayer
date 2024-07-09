@@ -196,16 +196,17 @@ public class GameManager : MonoBehaviour
         */
    
 
-    //highestDisplay.text = highestKilledEnemyText.text;
-    killedEnemyDisplay.text = killedEnemyText.text;
+        //highestDisplay.text = highestKilledEnemyText.text;
+        killedEnemyDisplay.text = killedEnemyText.text;
         timeSurvivedDisplay.text = stopWatchDisplay.text;
         collectedCoinsDisplay.text = coinsText.text;
         ChangeState(GameState.GameOver);
 
        
         //highestKilledEnemyText.text = highestScore.ToString();
+
         PlayfabManager pm = GameObject.FindWithTag("PlayfabManager").GetComponent<PlayfabManager>();
-        pm.SendLeaderboard(10);
+        pm.SendLeaderboard((int)killedEnemyCount);
     }
 
     //---------------------------------------------------------------------

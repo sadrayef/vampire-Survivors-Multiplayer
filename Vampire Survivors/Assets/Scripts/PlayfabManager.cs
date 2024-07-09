@@ -78,9 +78,9 @@ public class PlayfabManager : MonoBehaviour
 
     private void Start()
     {
-        //Login();   //it was before login with email address
+        Login();   //it was before login with email address
         //loginPage.SetActive(true);
-        AccountDetails.text = "Playing as a Guest.";
+        //AccountDetails.text = "Playing as a Guest.";
     }
 
     void Login()
@@ -130,7 +130,7 @@ public class PlayfabManager : MonoBehaviour
         var request = new GetLeaderboardRequest
         {
             StatisticName = "PlatformScore",
-            StartPosition = 0,
+            StartPosition = 1,
             MaxResultsCount = 10
         };
         PlayFabClientAPI.GetLeaderboard(request, OnLeaderboardGet, OnError);
@@ -138,6 +138,10 @@ public class PlayfabManager : MonoBehaviour
 
     void OnLeaderboardGet(GetLeaderboardResult result)
     {
+        foreach (Transform item in rowParent)
+        {
+            Destroy(item.gameObject);
+        }
         foreach (var item in result.Leaderboard)
         {
             GameObject newGo = Instantiate(rowPrefab, rowParent);

@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     public GameObject levelUpScreen;
 
     [Header("Current Stat Displays")]
+    public Text healthDisplay;
     public Text currentHealthDisplay;
     public Text currentRecoveryDisplay;
     public Text currentMoveSpeedDisplay;

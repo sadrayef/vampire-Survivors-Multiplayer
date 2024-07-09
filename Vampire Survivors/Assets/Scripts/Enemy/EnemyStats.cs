@@ -137,7 +137,7 @@ public class EnemyStats : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player")) {
             HeroStats hero = collision.gameObject.GetComponent<HeroStats>();    
-            hero.TakeDamage(currentDamage);
+            hero.TakeDamage((int)currentDamage);
 
         }
     }

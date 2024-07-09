@@ -24,9 +24,9 @@ public class HeroStats : MonoBehaviour
 
     #region Current Stats Properties
     //properties
-    public float CurrentHealth
+    public int CurrentHealth
     {
-        get { return currentHealth; }
+        get { return (int)currentHealth; }
         set
         {
             if (currentHealth != value)
@@ -35,6 +35,7 @@ public class HeroStats : MonoBehaviour
                 if(GameManager.instance != null)
                 {
                     GameManager.instance.currentHealthDisplay.text = "Health: " + currentHealth;
+                    GameManager.instance.healthDisplay.text = "Health: " + currentHealth;
                 }
                 //Debug.Log("valus has changed");
             }
@@ -173,7 +174,7 @@ public class HeroStats : MonoBehaviour
 
         inventory = GetComponent<InventoryManager>();
 
-        CurrentHealth = characterData.MaxHealth + (int)PlayerPrefs.GetFloat("hCount");
+        CurrentHealth = (int)(characterData.MaxHealth + (int)PlayerPrefs.GetFloat("hCount"));
         CurrentRecovery = characterData.Recovery;
         CurrentMoveSpeed = characterData.MoveSpeed + (int)PlayerPrefs.GetFloat("sCount");
         CurrentMight = characterData.Might;
@@ -196,6 +197,8 @@ public class HeroStats : MonoBehaviour
      void Start()
     {
         experienceCap = levelRanges[0].experienceCapIncrease;
+
+        GameManager.instance.healthDisplay.text = "Health: " + currentHealth + PlayerPrefs.GetFloat("Health");
 
         GameManager.instance.currentHealthDisplay.text = "Health: " + currentHealth + PlayerPrefs.GetFloat("Health");
         GameManager.instance.currentRecoveryDisplay.text = "Recovery: " + currentRecovery;
@@ -288,7 +291,7 @@ public class HeroStats : MonoBehaviour
         levelText.text = "lvl " + level.ToString();
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         if (!isInvincible)
         {
@@ -328,7 +331,7 @@ public class HeroStats : MonoBehaviour
         }
     }
 
-    public void RestoreHealth(float amount)
+    public void RestoreHealth(int amount)
     {
         if(CurrentHealth < characterData.MaxHealth)
         {
@@ -336,7 +339,7 @@ public class HeroStats : MonoBehaviour
 
             if(CurrentHealth > characterData.MaxHealth)
             {
-                CurrentHealth = characterData.MaxHealth;
+                CurrentHealth = (int)characterData.MaxHealth;
             }
         }
 
@@ -348,11 +351,11 @@ public class HeroStats : MonoBehaviour
     {
         if(CurrentHealth < characterData.MaxHealth)
         {
-            CurrentHealth += CurrentHealth * Time.deltaTime * 0.0003f;
+           CurrentHealth += CurrentHealth * (int)(Time.deltaTime * 0.0003f);
         }
         if(CurrentHealth > characterData.MaxHealth)
         {
-            CurrentHealth = characterData.MaxHealth;
+            CurrentHealth = (int)characterData.MaxHealth;
         }
     }
 

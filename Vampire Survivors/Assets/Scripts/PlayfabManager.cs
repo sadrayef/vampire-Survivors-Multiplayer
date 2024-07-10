@@ -130,7 +130,7 @@ public class PlayfabManager : MonoBehaviour
         var request = new GetLeaderboardRequest
         {
             StatisticName = "PlatformScore",
-            StartPosition = 1,
+            StartPosition = 0,
             MaxResultsCount = 10
         };
         PlayFabClientAPI.GetLeaderboard(request, OnLeaderboardGet, OnError);
@@ -147,7 +147,7 @@ public class PlayfabManager : MonoBehaviour
             GameObject newGo = Instantiate(rowPrefab, rowParent);
             Text[] texts = newGo.GetComponentsInChildren<Text>();
 
-            texts[0].text = item.Position.ToString();
+            texts[0].text = (item.Position + 1).ToString();
             texts[1].text = item.PlayFabId;
             texts[2].text = item.StatValue.ToString();  
 

@@ -54,6 +54,7 @@ public class HeroMovement : MonoBehaviour
 
         float Xmover = Input.GetAxisRaw("Horizontal");
         float YMover = Input.GetAxisRaw("Vertical"); 
+
         moveDir = new Vector2(Xmover, YMover).normalized;
 
         if (moveDir.y != 0)

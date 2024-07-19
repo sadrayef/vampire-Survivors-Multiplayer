@@ -4,10 +4,6 @@ www.photonengine.com  -  Join our Discord Server: https://dashboard.photonengine
 
 
 
-Version 4.1.8.4 (26. April 2024 - rev7529)
-    Changed: SendAcksOnly and SendOutgoingCommands logging (they only log successful re-sends).
-    Changed: In QueueSentCommand the reliableCommandsSent is increased only for commands that are sent the first time (not counting repeats anymore).
-
 Version 4.1.8.3 (24. April 2024 - rev7519)
     Changed: Sending of reliable commands. There is now a "Send Window" which limits how many reliable commands are being sent, based off the lowest sent sequence number, only the next XY sequence numbers can be sent. This moves with incoming acknowledgements. This avoids spamming the server, which caused resends.
     Note: Per channel, the Send Window indirectly affects unreliable and even unsequenced commands by ending the sending for a channel early. Use a separate channel (higher number) for larger chunks of data to avoid related lag.

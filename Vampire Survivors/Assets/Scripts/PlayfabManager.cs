@@ -16,6 +16,7 @@ public class PlayfabManager : MonoBehaviour
     public InputField passwordInput;
     public InputField emailInput;
     public Text AccountDetails;
+    private bool hasBeenLoggedin = false;
 
 
     public void RegisterButton()
@@ -76,11 +77,16 @@ public class PlayfabManager : MonoBehaviour
     }
 
 
-    private void Start()
+    private void Awake()
     {
-        Login();   //it was before login with email address
-        //loginPage.SetActive(true);
-        //AccountDetails.text = "Playing as a Guest.";
+        if(!hasBeenLoggedin) 
+        {
+            Login();
+            loginPage.SetActive(true);
+            AccountDetails.text = "Playing as a guest.";
+            hasBeenLoggedin = true;
+        }
+
     }
 
     void Login()

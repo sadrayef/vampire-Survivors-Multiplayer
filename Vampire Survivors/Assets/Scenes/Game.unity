@@ -644,7 +644,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 386, y: -77}
+  m_AnchoredPosition: {x: 296, y: -70}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &93038973
@@ -677,20 +677,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 003e978105722b4479f58052860fee8d, type: 3}
-    m_FontSize: 26
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '000
-
-'
+  m_Text: 'Health : 000'
 --- !u!1 &104156724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,9 +1085,9 @@ MonoBehaviour:
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 1000
+  maxEnemiesAllowed: 500
   maxEnemiesReached: 0
-  waveInterval: 75
+  waveInterval: 90
   relativeSpawnPoints:
   - {fileID: 1516617798}
   - {fileID: 2080052249}
@@ -2323,31 +2321,31 @@ MonoBehaviour:
   levelRanges:
   - startLevel: 1
     endLevel: 3
-    experienceCapIncrease: 300
+    experienceCapIncrease: 500
   - startLevel: 4
     endLevel: 5
-    experienceCapIncrease: 100
+    experienceCapIncrease: 600
   - startLevel: 6
     endLevel: 7
-    experienceCapIncrease: 2000
+    experienceCapIncrease: 2500
   - startLevel: 8
     endLevel: 9
-    experienceCapIncrease: 3000
+    experienceCapIncrease: 3800
   - startLevel: 10
     endLevel: 11
-    experienceCapIncrease: 4000
+    experienceCapIncrease: 4900
   - startLevel: 12
     endLevel: 13
-    experienceCapIncrease: 5000
+    experienceCapIncrease: 5700
   - startLevel: 14
     endLevel: 15
-    experienceCapIncrease: 800
+    experienceCapIncrease: 7500
   - startLevel: 16
     endLevel: 17
-    experienceCapIncrease: 950
+    experienceCapIncrease: 9500
   - startLevel: 18
     endLevel: 19
-    experienceCapIncrease: 2150
+    experienceCapIncrease: 12000
   invincibilityDuration: 5
   weaponIndex: 0
   passiveItemIndex: 0
@@ -4505,8 +4503,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175.99988, y: 463}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 441, y: 470}
+  m_SizeDelta: {x: 100, y: 78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &575011919
 MonoBehaviour:
@@ -4661,10 +4659,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 003e978105722b4479f58052860fee8d, type: 3}
-    m_FontSize: 14
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -4697,7 +4695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 528, y: -70}
+  m_AnchoredPosition: {x: 566, y: -70}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &614279473
@@ -8120,10 +8118,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 003e978105722b4479f58052860fee8d, type: 3}
-    m_FontSize: 14
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -10800,7 +10798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 588, y: 470}
+  m_AnchoredPosition: {x: 626, y: 470}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2037316107

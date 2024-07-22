@@ -17,6 +17,7 @@ public class PlayfabManager : MonoBehaviour
     public InputField emailInput;
     public Text AccountDetails;
     private bool hasBeenLoggedin = false;
+    public int logged = 0;
 
 
     public void RegisterButton()
@@ -41,6 +42,12 @@ public class PlayfabManager : MonoBehaviour
         messageText.text = "Registered and logged in!";
         AccountDetails.text = emailInput.text;
         loginPage.SetActive(false);
+        hasBeenLoggedin = true;
+        logged = 1;
+        PlayerPrefs.SetFloat("logged", logged);
+        PlayerPrefs.SetString("email", emailInput.text);
+
+
     }
 
     public void LoginButton()
@@ -58,6 +65,11 @@ public class PlayfabManager : MonoBehaviour
         messageText.text = "Logged in!";
         AccountDetails.text = emailInput.text;
         loginPage.SetActive(false);
+        hasBeenLoggedin = true;
+        logged = 1;
+        PlayerPrefs.SetFloat("logged", logged);
+        //PlayerPrefs.SetFloat();
+        PlayerPrefs.SetString("email", emailInput.text);
     }
 
     public void ResetPasswordButton()
@@ -79,12 +91,19 @@ public class PlayfabManager : MonoBehaviour
 
     private void Awake()
     {
-        if(!hasBeenLoggedin) 
+  
+        if(PlayerPrefs.GetFloat("logged") != 1) 
         {
             Login();
-            loginPage.SetActive(true);
+            //loginPage.SetActive(true);
             AccountDetails.text = "Playing as a guest.";
             hasBeenLoggedin = true;
+            logged = 1;
+            PlayerPrefs.SetFloat("logged", logged);
+        }
+        else
+        {
+            AccountDetails.text = PlayerPrefs.GetString("email");
         }
 
     }
@@ -159,6 +178,14 @@ public class PlayfabManager : MonoBehaviour
 
             Debug.Log(item.Position + " " + item.PlayFabId + " " + item.StatValue);
         }
+    }
+
+
+
+    public void OnApplicationQuit()
+    {
+        PlayerPrefs.SetFloat("logged", 0);
+        PlayerPrefs.SetString("email", "Playing as guest");
     }
 }
 

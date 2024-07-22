@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Title Screen.unity
     guid: e73fdc33449bb4500ba901ff5a0e3315
   - enabled: 1
+    path: Assets/Scenes/ConnectToServer.unity
+    guid: 5f8c5bfa65a934af6bbc0ca611f3f182
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 3f8875bd1034f44c0957ba1ddb32aeff
   - enabled: 1
@@ -20,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lobby.unity
     guid: e09dbe832a93140909f8c8fff0dfed43
+  - enabled: 1
+    path: Assets/Scenes/Lobby2.unity
+    guid: 94bf6a0abd69d45e88b90d3a9c4d8221
   - enabled: 1
     path: Assets/Scenes/Game 2.unity
     guid: a6b73547e4dd22d4ca466babe4cc8a5f

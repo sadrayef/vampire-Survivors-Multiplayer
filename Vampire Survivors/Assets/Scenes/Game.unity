@@ -1087,7 +1087,7 @@ MonoBehaviour:
   enemiesAlive: 0
   maxEnemiesAllowed: 500
   maxEnemiesReached: 0
-  waveInterval: 90
+  waveInterval: 35
   relativeSpawnPoints:
   - {fileID: 1516617798}
   - {fileID: 2080052249}
@@ -6461,6 +6461,7 @@ MonoBehaviour:
   passwordInput: {fileID: 0}
   emailInput: {fileID: 0}
   AccountDetails: {fileID: 0}
+  logged: 0
 --- !u!4 &1029288835
 Transform:
   m_ObjectHideFlags: 0

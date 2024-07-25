@@ -99,7 +99,7 @@ public class PowerUp : MonoBehaviour
     {
         if (hCount < 5 && num >= 10)
         {
-            health += 50;
+            health += 75;
             hCount++ ;
 
             num -= 10;
@@ -117,7 +117,7 @@ public class PowerUp : MonoBehaviour
     {
         if (sCount < 5 && num >= 10)
         {
-            speed += 50;
+            speed += 5;
             sCount++ ;
 
             num -= 10;

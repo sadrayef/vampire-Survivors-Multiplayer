@@ -20,6 +20,9 @@ _"Survive the Eclipse. Become the Struggler."_
 </div>
 
 ---
+## 📥 Download
+
+Grab the latest playable build from the [Releases page](https://github.com/<your-username>/<your-repo>/releases/latest).
 
 ## 📖 About the Project
 
